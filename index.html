@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -13,8 +13,1227 @@
   <title>waterdel-house</title>
 </head>
 
-<body>
-  <h2>hsfslsfjslf</h2>
+<body class="page__body">
+  <header class="page__header header">
+    <div class="container">
+      <div class="header__content">
+        <div id="mobile-menu-burger" class="header__burger-wrapper header-tablet__aside">
+          <button class="header__burger link-tool" type="button">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.66666 8H13.3333" stroke="white" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round">
+              </path>
+              <path d="M2.66666 12H13.3333" stroke="white" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+              <path d="M2.66666 4H13.3333" stroke="white" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round">
+              </path>
+            </svg>
+          </button>
+        </div>
+
+        <div class="header__logo logo">
+          <a class="logo__link" href="#hero">
+            <img class="logo__icon" src="images/logo.png" width="140" height="52" alt="Логотип WATER Delivery">
+          </a>
+        </div>
+
+        <nav class="header__nav">
+          <ul id="menu-header-menu" class="header__menu">
+            <li class="header__menu-item">
+              <a href="#problems" class="header__menu-link">Проблемы</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#solution" class="header__menu-link">Решения</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#how-it-works" class="header__menu-link">Как работает</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#components" class="header__menu-link">Оснащение</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#for-whom" class="header__menu-link">Кому подходит</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#reviews" class="header__menu-link">Отзывы</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#faq" class="header__menu-link">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__contacts header-tablet__aside">
+          <a href="tel:+74950031222" class="header-phone">
+            <span class="header-phone__icon link-tool">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                  d="M9.22 11.05a.7.7 0 0 0 .81-.2l.24-.32a1.3 1.3 0 0 1 1.06-.53h2a1.33 1.33 0 0 1 1.34 1.33v2a1.33 1.33 0 0 1-1.34 1.34 12 12 0 0 1-12-12 1.33 1.33 0 0 1 1.34-1.34h2A1.33 1.33 0 0 1 6 2.67v2a1.3 1.3 0 0 1-.53 1.06l-.32.24a.7.7 0 0 0-.19.82 9.3 9.3 0 0 0 4.26 4.26">
+                </path>
+              </svg>
+            </span>
+            <span class="header-phone__value">+7 495 003 12 22</span>
+          </a>
+
+          <button class="header__btn button button--primary" data-modal="callback">Заказать звонок</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="header__mobile-menu mobile-menu">
+      <button class="mobile-menu__close" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none">
+          <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M11 1 1 11M1 1l10 10" />
+        </svg>
+      </button>
+
+      <a href="/" class="mobile-menu__logo">
+        <img class="mobile-menu__icon" src="images/logo.png" width="140" height="52" alt="Логотип WATER Delivery">
+      </a>
+
+      <nav class="mobile-menu__nav">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="/#problems">Проблемы</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="/#solution">Решения</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="/#how-it-works">Как работает</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="/#components">Оснащение</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="/#for-whom">Кому подходит</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="/#reviews">Отзывы</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="/#faq">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="mobile-menu__contacts">
+        <a href="tel:+74950031222" class="mobile-menu__phone">
+          <span class="mobile-menu__phone-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+              <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                d="M9.22 11.05a.7.7 0 0 0 .81-.2l.24-.32a1.3 1.3 0 0 1 1.06-.53h2a1.33 1.33 0 0 1 1.34 1.33v2a1.33 1.33 0 0 1-1.34 1.34 12 12 0 0 1-12-12 1.33 1.33 0 0 1 1.34-1.34h2A1.33 1.33 0 0 1 6 2.67v2a1.3 1.3 0 0 1-.53 1.06l-.32.24a.7.7 0 0 0-.19.82 9.3 9.3 0 0 0 4.26 4.26" />
+            </svg>
+          </span>
+          <span class="mobile-menu__phone-text">+7 495 003 12 22</span>
+        </a>
+        <button class="mobile-menu__button button button--primary" data-modal="callback">Заказать звонок</button>
+      </div>
+    </div>
+
+    <div class="header__progressbar progressbar"></div>
+  </header>
+
+  <main class="page__main">
+    <h1 class="visually-hidden">Промо сайт водоочистительных систем для воды</h1>
+
+    <section id="block-banner" class="page__banner banner">
+      <img class="banner__bubbles" src="images/banner-bubbles.png" width="564" height="564" alt="">
+
+      <div class="banner__bg" data-aos="fade-in" data-aos-delay="1500">
+        <picture>
+          <source media="(max-width: 768px)" srcset="images/banner-mobile.png">
+          <source media="(max-width: 1648px)" srcset="images/banner-tablet.png">
+          <img class="banner__bg-img" src="images/banner.png" width="1835" height="883"
+            alt="Баннер с установщиком водоочистительных приборов в фокусе">
+        </picture>
+      </div>
+
+      <div class="container banner__content-wrapper">
+        <div class="banner__content">
+          <h2 class="banner__title" data-aos="fade-right" data-aos-delay="200">Установка <br class="banner__br-one">
+            системы очистки <br class="banner__br-second"> воды <span class="highlighted">в частный дом</span>
+          </h2>
+
+          <p class="banner__text" data-aos="fade-right" data-aos-delay="600">Чистая вода из скважины или колодца — без
+            железа,жёсткости и запаха. Рассчитайте стоимость и получитесистему со скидкой 50%</p>
+          <div class="banner__btn-wrapper" data-aos="fade-up" data-aos-delay="800">
+            <button class="banner__button button button--secondary" data-modal="callback">Рассчитать стоимость
+              установки</button>
+          </div>
+          <div class="banner__conditions conditions" data-aos="fade-up" data-aos-delay="1000">
+            <p class="conditions__text">Преимущества фильтра</p>
+            <ul class="conditions__list">
+              <li class="conditions__item">
+                <img class="conditions__item-image" src="images/tick.svg" width="40" height="40"
+                  alt="Иконка галочки на светло синем фоне в виде звездочки">
+                <p class="conditions__item-text">Удаляет железо и марганец из воды</p>
+              </li>
+              <li class="conditions__item">
+                <img class="conditions__item-image" src="images/tick.svg" width="40" height="40"
+                  alt="Иконка галочки на светло синем фоне в виде звездочки">
+                <p class="conditions__item-text">Решает проблему жёсткости и накипи</p>
+              </li>
+              <li class="conditions__item">
+                <img class="conditions__item-image" src="images/tick.svg" width="40" height="40"
+                  alt="Иконка галочки на светло синем фоне в виде звездочки">
+                <p class="conditions__item-text">Идеален для очистки воды из скважины</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="banner__right">
+          <div class="banner__promo promo" data-aos="fade-down" data-aos-delay="1100">
+            <div class="promo__promo-count promo-count">
+              <svg class="promo-count__icon" xmlns="http://www.w3.org/2000/svg" width="45" height="60" fill="none"
+                viewBox="0 0 45 60">
+                <path fill="url(#a)" fill-rule="evenodd"
+                  d="M44.567 38.645C44.07 50.383 34.291 59.75 22.296 59.75 9.982 59.75 0 49.55 0 37.71c0-1.583-.029-4.747 2.372-10.083 1.437-3.194 2.338-5.2 2.846-7.035.28-1.008.823-2.61 2.372 0 .913 1.539.949 3.752.949 3.752s3.398-2.578 5.692-7.503c3.363-7.22.68-11.537-.237-14.538-.317-1.038-.517-2.904 1.66-2.11 2.218.809 8.083 4.867 11.148 9.144 4.375 6.105 5.93 11.959 5.93 11.959s1.4-1.719 1.897-3.518c.561-2.03.57-4.042 2.372-1.875 1.714 2.06 4.26 5.932 5.693 9.613 2.601 6.685 1.873 13.13 1.873 13.13Z"
+                  clip-rule="evenodd"></path>
+                <path fill="#FC9502" fill-rule="evenodd"
+                  d="M22.296 59.75c-8.515 0-15.418-6.824-15.418-15.242 0-5.079 2.07-8.163 6.38-12.344 2.759-2.678 5.341-5.966 6.439-8.206.216-.44.707-2.738 2.603-.048.995 1.41 2.554 3.92 3.553 6.06 1.724 3.692 2.135 7.27 2.135 7.27s1.689-.985 2.846-3.518c.373-.816 1.128-3.907 3.236-.817 1.547 2.268 3.673 6.346 3.643 11.603 0 8.418-6.903 15.241-15.417 15.241Z"
+                  clip-rule="evenodd"></path>
+                <path fill="#FCE202" fill-rule="evenodd"
+                  d="M22.533 43.101c2.194 0 2.194 4.017 4.98 9.38 1.856 3.57-.92 7.268-4.98 7.268-4.061 0-6.167-3.254-6.167-7.269 0-4.014 3.973-9.379 6.167-9.379Z"
+                  clip-rule="evenodd"></path>
+                <defs>
+                  <linearGradient id="a" x1="22.329" x2="22.329" y1="59.794" y2=".045" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FF4C0D"></stop>
+                    <stop offset="1" stop-color="#FC9502"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <p class="promo-count__text">Акция до 31 декабря</p>
+            </div>
+
+            <div class="promo__box-text">
+              <p class="promo__deal"><span class="highlighted">Акционная</span></p>
+              <p class="promo__price">стоимость установки:</p>
+            </div>
+
+            <div class="promo__values">
+              <span class="promo__new-value highlighted">1 490 ₽</span>
+              <span class="promo__old-value">3 890 ₽</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="banner__scroll" href="#">
+        <img class="banner__scroll-icon" src="images/scroll-bg.png" width="171" height="141"
+          alt="Стрелка вниз для скролла к следующей секции">
+      </a>
+    </section>
+
+    <section id="block-quiz" class="page__quiz quiz">
+      <div class="container">
+        <h2 class="quiz__title section-title" data-aos="fade-up">
+          Ответьте на 3 <span class="highlighted--second">вопроса</span> и мы подберем идеальное решение и <span
+            class="highlighted--second">зафиксируем скидку 50%</span>
+        </h2>
+
+        <div class="quiz__titles">
+          <p class="quiz__titles-text active">Какую проблему с водой вы хотите решить?</p>
+          <p class="quiz__titles-text">Сколько человек в семье будут регулярно пить эту воду?</p>
+          <p class="quiz__titles-text">Есть ли под мойкой свободное местодля бака и блоков фильтров, а также
+            розетка?</p>
+        </div>
+
+        <form class="quiz__form quiz-form" data-aos="fade-up" data-aos-offset="200" data-aos-delay="200">
+          <fieldset class="quiz-form__row" data-step="1">
+            <div class="quiz-form__left">
+              <p class="quiz-form__left-title">Какую проблему с водой вы хотите решить?</p>
+              <div class="quiz-form__left-steps">
+                <span class="quiz-form__left-steps-line" style="width: 33.333333333333%"></span>
+              </div>
+              <div class="quiz-form__left-question">
+                <span class="quiz-form__left-question-value">Вопрос 1 из 3</span>
+                <button class="quiz-form__left-btn button button--secondary" type="button">Следующий вопрос</button>
+              </div>
+
+              <img class="quiz-form__bubbles" src="images/quiz-form-bubbles.png" width="415" height="574" alt="">
+              <img class="quiz-form__image" src="images/quiz-form-img.png" width="381" height="201" alt="">
+            </div>
+            <div class="quiz-form__right">
+              <p class="quiz-form__right-text">Выберите один или несколько вариантов:</p>
+
+              <div class="quiz-form__grid">
+                <label class="quiz-form__box">
+                  <input type="checkbox" name="problems[]" value="Привкус или запах (хлор, металл, другие)">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="images/quiz-card-1.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">Привкус или запах <br>
+                      (хлор, металл, другие)</span>
+                  </span>
+                </label>
+                <label class="quiz-form__box">
+                  <input type="checkbox" name="problems[]" value="Накипь в чайнике и налёт на кранах">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="images/quiz-card-2.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">Накипь в чайнике <br>
+                      и налёт на кранах</span>
+                  </span>
+                </label>
+                <label class="quiz-form__box">
+                  <input type="checkbox" name="problems[]" value="Мутность или возможные частицы">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="images/quiz-card-3.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">Мутность <br>
+                      или возможные частицы</span>
+                  </span>
+                </label>
+                <label class="quiz-form__box">
+                  <input type="checkbox" name="problems[]"
+                    value="Переживаю за безопасность (вирусы, бактерии, нитраты)">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="images/quiz-card-4.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">Переживаю за безопасность (вирусы, бактерии, нитраты)</span>
+                  </span>
+                </label>
+                <label class="quiz-form__box">
+                  <input type="checkbox" name="problems[]" value="Всё в порядке, просто хочу воду лучшего качества">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="images/quiz-card-5.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">Всё в порядке, просто хочу воду лучшего качества</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="quiz-form__row" data-step="2">
+            <div class="quiz-form__left">
+              <p class="quiz-form__left-title">Сколько человек в семье будут регулярно пить эту воду?</p>
+              <div class="quiz-form__left-steps">
+                <span style="width: 66.666666666667%"></span>
+              </div>
+              <div class="quiz-form__left-question">
+                <span class="quiz-form__left-question-value">Вопрос 2 из 3</span>
+                <button class="quiz-form__left-btn button button--secondary" type="button">Следующий вопрос</button>
+              </div>
+
+              <img class="quiz-form__bubbles" src="images/quiz-form-bubbles.png" width="415" height="574" alt="">
+              <img class="quiz-form__image" src="images/quiz-form-img.png" width="381" height="201" alt="">
+            </div>
+            <div class="quiz-form__right">
+              <p class="quiz-form__right-text">Выберите один или несколько вариантов:</p>
+
+              <div class="quiz-form__grid">
+                <label class="quiz-form__box">
+                  <input type="radio" name="peoples" value="1-2 человека">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="images/quiz-card-6.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">1-2 человека</span>
+                  </span>
+                </label>
+                <label class="quiz-form__box">
+                  <input type="radio" name="peoples" value="3-4 человека">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="images/quiz-card-7.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">3-4 человека</span>
+                  </span>
+                </label>
+                <label class="quiz-form__box">
+                  <input type="radio" name="peoples" value="5 и более человек">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="images/quiz-card-8.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">5 и более человек</span>
+                  </span>
+                </label>
+                <label class="quiz-form__box">
+                  <input type="radio" name="peoples" value="Не только пить, но и готовить каждый день на всю семью">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="images/quiz-card-9.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">Не только пить, но и готовить каждый день на всю семью</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="quiz-form__row" data-step="3">
+            <div class="quiz-form__left">
+              <p class="quiz-form__left-title">Есть ли под мойкой свободное место для бака и блоков фильтров, а также
+                розетка?</p>
+              <div class="quiz-form__left-steps">
+                <span style="width: 100%"></span>
+              </div>
+              <div class="quiz-form__left-question">
+                <span class="quiz-form__left-question-value">Вопрос 3 из 3</span>
+                <button class="quiz-form__left-btn button button--secondary" type="button">Далее</button>
+              </div>
+
+              <img class="quiz-form__bubbles" src="images/quiz-form-bubbles.png" width="415" height="574" alt="">
+              <img class="quiz-form__image" src="images/quiz-form-img.png" width="381" height="201" alt="">
+            </div>
+            <div class="quiz-form__right">
+              <p class="quiz-form__right-text">Выберите один вариант:</p>
+
+              <div class="quiz-form__grid">
+                <label class="quiz-form__box">
+                  <input type="radio" name="free_space"
+                    value="Просторно. Система легко поместится (как две-три обувные коробки)">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="image/quiz-card-10.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">Просторно. Система легко поместится (как две-три обувные
+                      коробки)</span>
+                  </span>
+                </label>
+                <label class="quiz-form__box">
+                  <input type="radio" name="free_space"
+                    value="Средне. Только компактное решение (как одна коробка или рюкзак)">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="images/quiz-card-11.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">Средне. Только компактное решение (как одна коробка или
+                      рюкзак)</span>
+                  </span>
+                </label>
+                <label class="quiz-form__box">
+                  <input type="checkbox" name="problems[]" value="Мутность или возможные частицы">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="images/quiz-card-12.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">Мутность <br>
+                      или возможные частицы</span>
+                  </span>
+                </label>
+                <label class="quiz-form__box">
+                  <input type="radio" name="free_space"
+                    value="Очень тесно.&nbsp;Мало места, нужна самая тонкая или угловая система">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="images/quiz-card-13.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">Очень тесно. Мало места, нужна самая тонкая или угловая
+                      система</span>
+                  </span>
+                </label>
+                <label class="quiz-form__box">
+                  <input type="radio" name="free_space"
+                    value="Не уверен(а), нужна консультация и замер мастера по установке">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="images/quiz-card-5.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">Не уверен(а), нужна консультация и замер мастера по
+                      установке</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="quiz-form__row quiz-form__row--final" data-step="final">
+            <div class="quiz-form__left">
+              <p class="quiz-form__title">Укажите телефон — закрепим скидку 50% за вашим номером</p>
+              <div class="quiz-form__box">
+                <label class="quiz-form__field quiz-form__field--tel">
+                  <svg class="quiz-form__icon" xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none">
+                    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"
+                      d="M12.1 14.5a.9.9 0 0 0 1-.3l.4-.4a1.8 1.8 0 0 1 1.4-.7h2.6a1.7 1.7 0 0 1 1.8 1.8v2.6a1.7 1.7 0 0 1-1.8 1.8A15.7 15.7 0 0 1 1.7 3.4a1.7 1.7 0 0 1 1.8-1.8h2.6A1.7 1.7 0 0 1 8 3.5v2.6a1.7 1.7 0 0 1-.7 1.4l-.4.3A.9.9 0 0 0 6.5 9c1.2 2.4 3.2 4.4 5.6 5.6Z">
+                    </path>
+                  </svg>
+                  <input class="quiz-form__input" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __"
+                    autocomplete="off">
+                </label>
+                <div class="quiz-form__actions">
+                  <button class="quiz-form__button quiz-form__button--back" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M6 16L2 12L6 8" stroke="#163800" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                      <path d="M22 12L2 12" stroke="#163800" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </svg>
+                  </button>
+                  <button class="quiz-form__button quiz-form__button--submit" type="submit">Отправить</button>
+                </div>
+                <label class="fancy-form__acceptence acceptance">
+                  <div class="acceptance__checkbox-wrap">
+                    <input class="acceptance__checkbox" type="checkbox" name="acceptence" value="checkbox" checked="">
+                    <div class="acceptance__checkbox-indicator"></div>
+                  </div>
+                  <p class="acceptance__consent-text">Соглашаюсь с <a href="https://waterdel.store/privacy-policy/"
+                      target="_blank">условиями передачи данных</a></p>
+                </label>
+              </div>
+              <img src="image/quiz-form-bubbles.png" width="415" height="574" alt="">
+            </div>
+            <div class="quiz-form__right">
+              <div class="quiz-form__info">
+                <span class="quiz-form__checkmark">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M19.7705 5.93066L8.89705 16.8041L3.95459 11.8616" stroke="white" stroke-width="2.54184"
+                      stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </span>
+                <p>Готово! Оставьте контакты — перезвоним через 15 минут</p>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+    <section id="block-problems" class="page__problems problems">
+      <div class="container">
+        <h2 class="problems__title section-title" data-aos="fade-up">Низкое <span class="highlighted--second">качество
+            воды</span> влечет за собой много проблем
+        </h2>
+
+        <ul class="problems__items">
+          <li class="problems__item" data-aos="zoom-in" data-aos-delay="300">
+            <img class="problems__item-image" src="images/problems-icon-1.svg" width="60" height="60"
+              alt="Иконка сложенного мужского кошелька">
+            <p class="problems__item-text">
+              <strong>Рыжие пятна</strong> на сантехнике <br> и белье — избыток железа
+            </p>
+          </li>
+          <li class="problems__item" data-aos="zoom-in" data-aos-delay="450">
+            <img class="problems__item-image" src="images/problems-icon-2.svg" width="60" height="60"
+              alt="Иконка 19 литровой бутылки воды">
+            <p class="problems__item-text"><strong>Накипь на чайнике</strong> <br> и бойлере — жесткая вода</p>
+          </li>
+          <li class="problems__item" data-aos="zoom-in" data-aos-delay="600">
+            <img class="problems__item-image" src="images/problems-icon-3.svg" width="60" height="60"
+              alt="Иконка электрического чайника">
+            <p class="problems__item-text"><strong>Неприятный запах</strong> — <br> сероводород или органика</p>
+          </li>
+          <li class="problems__item" data-aos="zoom-in" data-aos-delay="750">
+            <img class="problems__item-image" src="images/problems-icon-4.svg" width="60" height="60"
+              alt="Иконка чеклиста здоровья">
+            <p class="problems__item-text"><strong>Мутная вода</strong> — <br> механические примеси и песок</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="block-system" class="page__system system">
+      <div class="container">
+        <div class="system__inner">
+          <h2 class="system__title section-title" data-aos="fade-up">Система <span
+              class="highlighted--second">«АБФ-ОСМО-6»</span> — чистая вода из вашего крана
+          </h2>
+
+          <ul class="system__list">
+            <li class="system__item" data-aos="fade-right" data-aos-offset="200" data-aos-delay="300"
+              data-aos-duration="300">
+              <img class="system__item-image" src="images/system-icon-1.svg" width="60" height="60"
+                alt="Иконка бутылки воды">
+              <p class="system__item-text">Накопительный бак <strong>12 литров</strong></p>
+            </li>
+            <li class="system__item" data-aos="fade-right" data-aos-offset="200" data-aos-delay="450"
+              data-aos-duration="450">
+              <img class="system__item-image" src="images/system-icon-2.svg" width="60" height="60"
+                alt="Иконка фильтра">
+              <p class="system__item-text"><strong>6 ступеней</strong> очистки</p>
+            </li>
+            <li class="system__item" data-aos="fade-right" data-aos-offset="200" data-aos-delay="600"
+              data-aos-duration="600">
+              <img class="system__item-image" src="images/system-icon-3.svg" width="60" height="60"
+                alt="Иконка крана для воды">
+              <p class="system__item-text"><strong>до 200</strong> литров в сутки</p>
+            </li>
+            <li class="system__item" data-aos="fade-right" data-aos-offset="200" data-aos-delay="750"
+              data-aos-duration="750">
+              <img class="system__item-image" src="images/system-icon-4.svg" width="60" height="60" alt="Гарантия">
+              <p class="system__item-text">Гарантия на оборудование <strong>1 год</strong></p>
+            </li>
+          </ul>
+
+          <form class="system__calc-form calc-form" data-aos="fade-up" data-aos-offset="200" data-aos-delay="900"
+            data-aos-duration="900">
+            <legend class="calc-form__title">Расчитайте стоимость и получите 2 гарантии на монтаж <span
+                class="highlighted">в подарок</span>
+            </legend>
+
+            <div class="calc-form__row">
+              <label for="phone" class="calc-form__label">
+                <img class="calc-form__label-image" src="images/phone.svg" width="21" height="21"
+                  alt="Иконка трубки телефона">
+                <input type="tel" id="phone" name="phone" class="calc-form__input" placeholder="+7 (___) ___ - __ - __"
+                  autocomplete="off" aria-describedby="phone-help">
+              </label>
+
+              <button class="calc-form__btn button button--secondary" type="submit">Рассчитать стоимость</button>
+
+              <div id="phone-help" class="calc-form__help calc-form__help--sr">
+                Введите номер в формате +7 (XXX) XXX-XX-XX
+              </div>
+            </div>
+
+            <label class="calc-form__acceptence acceptance">
+              <div class="acceptance__checkbox-wrap">
+                <input class="acceptance__checkbox" type="checkbox" name="acceptence" value="checkbox" checked="">
+                <div class="acceptance__checkbox-indicator"></div>
+              </div>
+              <p class="acceptance__consent-text">Я даю <a href="https://waterdel.store/privacy-policy/"
+                  target="_blank">согласие на обработку</a> моих персональных данных в соответствии с <a
+                  href="https://waterdel.store/privacy-policy/" target="_blank">Политикой конфиденциальности</a>
+              </p>
+            </label>
+          </form>
+        </div>
+      </div>
+
+      <div class="system__bg-box" data-aos="fade-in" data-aos-delay="300" data-aos-duration="300">
+        <img class="system__bg-img" src="images/system-bg.webp" width="1920" height="777"
+          alt="В фокусе водоочистительный прибор для воды">
+      </div>
+    </section>
+
+    <section id="block-filter" class="page__filter filter filter--style-wrap">
+      <div class="container">
+        <h2 class="filter__title section-title" data-aos="fade-up">Как система фильтрует</h2>
+
+        <ul class="filter__list">
+          <li class="filter__item" data-aos="fade-in" data-aos-delay="300">
+            <span class="filter__num">01.</span>
+            <img class="filter__item-image" src="images/filter-icon-1.svg" width="60" height="60"
+              alt="Механическая очистка">
+            <p class="filter__item-text"><strong>Механическая очистка</strong> — удаляет песок, ржавчину, осадок</p>
+          </li>
+          <li class="filter__item" data-aos="fade-in" data-aos-delay="450">
+            <span class="filter__num">02.</span>
+            <img class="filter__item-image" src="images/filter-icon-2.svg" width="60" height="60" alt="Угольный фильтр">
+            <p class="filter__item-text"><strong>Угольный фильтр</strong> — убирает хлор и органику</p>
+          </li>
+          <li class="filter__item" data-aos="fade-in" data-aos-delay="600">
+            <span class="filter__num">03.</span>
+            <img class="filter__item-image" src="images/filter-icon-3.svg" width="60" height="60" alt="Карбон-блок">
+            <p class="filter__item-text"><strong>Карбон-блок</strong> — тонкая очистка от примесей</p>
+          </li>
+          <li class="filter__item" data-aos="fade-in" data-aos-delay="750">
+            <span class="filter__num">04.</span>
+            <img class="filter__item-image" src="images/filter-icon-4.svg" width="60" height="60"
+              alt="Мембрана обратного осмоса">
+            <p class="filter__item-text"><strong>Мембрана обратного осмоса</strong> — удаляет 99,97% загрязнений</p>
+          </li>
+          <li class="filter__item" data-aos="fade-in" data-aos-delay="900">
+            <span class="filter__num">05.</span>
+            <img class="filter__item-image" src="images/filter-icon-5.svg" width="60" height="60" alt="Постфильтр">
+            <p class="filter__item-text"><strong>Постфильтр</strong> — улучшает вкус воды</p>
+          </li>
+          <li class="filter__item" data-aos="fade-in" data-aos-delay="1050">
+            <span class="filter__num">06.</span>
+            <img class="filter__item-image" src="images/filter-icon-6.svg" width="60" height="60" alt="Минерализатор">
+            <p class="filter__item-text"><strong>Минерализатор</strong> — добавляет полезные минералы</p>
+          </li>
+        </ul>
+
+        <img class="filter__bg" src="imags/circle.png" width="1260" height="1260" alt="">
+      </div>
+    </section>
+
+    <section id="block-savings" class="page__savings savings savings--style-wrap">
+      <div class="container">
+        <h2 class="savings__title section-title" data-aos="fade-up">Экономия до <span
+            class="highlighted--second">XXXXXXX</span> в год на
+          воде</h2>
+
+        <ul class="savings__items">
+          <li class="savings__item" data-aos="fade-right" data-aos-delay="300">
+            <img class="savings__item-image" src="images/savings-first-icon-1.svg" width="72" height="72"
+              alt="Семья из 4 человек">
+            <p class="savings__item-text">Семья из 4 человек потребляет около 10л. питьевой воды в день</p>
+          </li>
+          <li class="savings__item" data-aos="fade-right" data-aos-delay="450">
+            <img class="savings__item-image" src="images/savings-first-icon-2.svg" width="72" height="72"
+              alt="Бутилированная вода">
+            <p class="savings__item-text">Бутилированная вода: </p>
+            <span class="savings__item-slogan">10л х 30 дней х 50₽/л = 15 000₽/мес.</span>
+            <img class="savings__item-img" src="images/saving-icon.svg" width="40" height="40"
+              alt="стрелка направо внутри звездочки на светло-голубом фоне">
+          </li>
+          <li class="savings__item" data-aos="fade-right" data-aos-delay="600">
+            <img class="savings__item-image" src="images/savings-first-icon-3.svg" width="72" height="72"
+              alt="Ваша экономия">
+            <p class="savings__item-text">Система фильтрации:</p>
+            <span class="savings__item-slogan">10л х 30 дней х 0,5₽/л = 150₽/мес.</span>
+            <img class="savings__item-img" src="images/saving-icon.svg" width="40" height="40"
+              alt="стрелка направо внутри звездочки на светло-голубом фоне">
+          </li>
+          <li class="savings__item savings__item--final" data-aos="fade-right" data-aos-delay="750">
+            <img class="savings__item-image" src="images/savings-first-icon-4.svg" width="72" height="72"
+              alt="Ваша экономия">
+            <p class="savings__item-text">Ваша экономия:</p>
+            <span class="savings__item-slogan">14 850₽/мес.</span>
+            <img class="savings__item-img" src="images/saving-icon.svg" width="40" height="40"
+              alt="стрелка направо внутри звездочки на светло-голубом фоне">
+            <img class="savings__bg" src="images/saving-bg.webp" width="350" height="199" alt="Иконка стрелки вправо">
+          </li>
+        </ul>
+
+        <ul class="savings__list">
+          <li class="savings__list-item" data-aos="zoom-in" data-aos-delay="900">
+            <img class="savings__list-item-img" src="images/savings-second-icon-1.svg" width="60" height="60"
+              alt="Литр чистой воды">
+            <div class="savings__list-text-content">
+              <h3 class="savings__list-item-title">Окупается за 1-2 месяца</h3>
+              <p class="savings__list-item-text">Литр чистой воды стоит меньше 1 рубля</p>
+            </div>
+          </li>
+          <li class="savings__list-item" data-aos="zoom-in" data-aos-delay="1050">
+            <img class="savings__list-item-img" src="images/savings-second-icon-2.svg" width="60" height="60"
+              alt="Всегда стабильное качество">
+            <div class="savings__list-text-content">
+              <h3 class="savings__list-item-title">Всегда стабильное качество воды</h3>
+              <p class="savings__list-item-text">не зависит от производителя бутылей</p>
+            </div>
+          </li>
+          <li class="savings__list-item" data-aos="zoom-in" data-aos-delay="1200">
+            <img class="savings__list-item-img" src="images/savings-second-icon-3.svg" width="60" height="60"
+              alt="Вода всегда под рукой">
+            <div class="savings__list-text-content">
+              <h3 class="savings__list-item-title">Вода всегда под рукой</h3>
+              <p class="savings__list-item-text">Не нужно заказывать, ждать доставку, хранить бутыли</p>
+            </div>
+          </li>
+          <li class="savings__list-item" data-aos="zoom-in" data-aos-delay="1350">
+            <img class="savings__list-item-img" src="images/savings-second-icon-4.svg" width="60" height="60"
+              alt="Ноль пластиковых отходов">
+            <div class="savings__list-text-content">
+              <h3 class="savings__list-item-title">Ноль пластиковых отходов</h3>
+              <p class="savings__list-item-text">Вы заботитесь о планете</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="block-perfect" class="page__perfect perfect">
+      <div class="container">
+        <div class="perfect__inner">
+          <h2 class="perfect__title section-title" data-aos="fade-up">Эта система <span class="highlighted">идеально
+              подойдёт вам</span>,
+            если вы...</h2>
+
+          <ul class="perfect__list">
+            <li class="perfect__item" data-aos="fade-right" data-aos-delay="300">
+              <img class="perfect__item-img" src="images/tick.svg" width="40" height="40"
+                alt="Иконка галочки на светло синем фоне в виде звездочки">
+              <p class="perfect__item-text">Цените качество и безопасность воды для всей семьи</p>
+            </li>
+            <li class="perfect__item" data-aos="fade-right" data-aos-delay="450">
+              <img class="perfect__item-img" src="images/tick.svg" width="40" height="40"
+                alt="Иконка галочки на светло синем фоне в виде звездочки">
+              <p class="perfect__item-text">Живёте в доме / квартире с нестабильным давлением воды</p>
+            </li>
+            <li class="perfect__item" data-aos="fade-right" data-aos-delay="600">
+              <img class="perfect__item-img" src="images/tick.svg" width="40" height="40"
+                alt="Иконка галочки на светло синем фоне в виде звездочки">
+              <p class="perfect__item-text">Заботитесь о здоровье и предпочитаете воду с минералами</p>
+            </li>
+            <li class="perfect__item" data-aos="fade-right" data-aos-delay="750">
+              <img class="perfect__item-img" src="images/tick.svg" width="40" height="40"
+                alt="Иконка галочки на светло синем фоне в виде звездочки">
+              <p class="perfect__item-text">Хотите избавиться от накипи, хлора и запаха в воде</p>
+            </li>
+            <li class="perfect__item" data-aos="fade-right" data-aos-delay="900">
+              <img class="perfect__item-img" src="images/tick.svg" width="40" height="40"
+                alt="Иконка галочки на светло синем фоне в виде звездочки">
+              <p class="perfect__item-text">Устали покупать бутилированную воду и хотите экономить</p>
+            </li>
+            <li class="perfect__item" data-aos="fade-right" data-aos-delay="1050">
+              <img class="perfect__item-img" src="images/tick.svg" width="40" height="40"
+                alt="Иконка галочки на светло синем фоне в виде звездочки">
+              <p class="perfect__item-text">Ищете современное и эстетичное решение для кухни</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="perfect__bg-container">
+        <img class="perfect__bg-img" src="image/perfect-bg.webp" width="1920" height="538" alt="">
+      </div>
+    </section>
+
+    <section id="block-steps" class="page__steps steps">
+      <img class="steps__bubbles steps__bubbles-1" src="images/steps-bubble-1.png" width="564" height="564"
+        alt="В фокусе капли воды">
+      <img class="steps__bubbles steps__bubbles-2" src="images/steps-bubble-2.png" width="564" height="564"
+        alt="В фокусе капли воды">
+
+      <div class="container">
+        <h2 class="steps__title section-title" data-aos="fade-up">3 простых шага до <span
+            class="highlighted--second">чистой воды</span>
+        </h2>
+
+        <div class="steps__purification-swiper purification-swiper swiper" data-aos="fade-up" data-aos-offset="200"
+          data-aos-delay="200">
+          <div class="swiper-wrapper purification-swiper__list">
+
+            <div class="swiper-slide purification-swiper__slide">
+              <div class="purification-swiper__image-wrap">
+                <img class="purification-swiper__img" src="images/steps-image-1.jpg" width="453" height="275" alt="">
+              </div>
+              <div class="purification-swiper__content">
+                <p class="purification-swiper__title">
+                  Заявка и&nbsp;консультация
+                </p>
+                <p class="purification-swiper__text">
+                  Оставьте заявку&nbsp;— перезвоним за&nbsp;30&nbsp;секунд. Поможем подобрать
+                  систему, ответим на&nbsp;вопросы. Без&nbsp;навязывания&nbsp;— только факты
+                </p>
+                <span class="purification-swiper__time">
+                  5–10&nbsp;минут
+                </span>
+              </div>
+            </div>
+
+            <div class="swiper-slide purification-swiper__slide">
+              <div class="purification-swiper__image-wrap">
+                <img class="purification-swiper__img" src="images/steps-image-2.jpg" width="453" height="275" alt="">
+              </div>
+              <div class="purification-swiper__content">
+                <p class="purification-swiper__title">
+                  Бесплатный выезд и&nbsp;установка
+                </p>
+                <p class="purification-swiper__text">
+                  Мастер приедет в&nbsp;удобное время. Установит систему, врежется
+                  в&nbsp;водопровод, подключит кран. Уберёт за&nbsp;собой&nbsp;— вам&nbsp;ничего делать не&nbsp;нужно
+                </p>
+                <span class="purification-swiper__time">
+                  1,5–2&nbsp;часа
+                </span>
+              </div>
+            </div>
+
+            <div class="swiper-slide purification-swiper__slide">
+              <div class="purification-swiper__image-wrap">
+                <img class="purification-swiper__img" src="images/steps-image-3.jpg" width="453" height="275" alt="">
+              </div>
+              <div class="purification-swiper__content">
+                <p class="purification-swiper__title">
+                  Наслаждение чистой водой
+                </p>
+                <p class="purification-swiper__text">
+                  Пейте свежую, мягкую и&nbsp;безопасную воду прямо из&nbsp;крана.
+                  Мы&nbsp;на&nbsp;связи, если&nbsp;понадобится сервис или&nbsp;замена картриджей
+                </p>
+                <span class="purification-swiper__time">
+                  Гарантия 2&nbsp;года на&nbsp;работы
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="steps__purification-nav purification-nav">
+          <div class="purification-nav__arrow prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none">
+              <path stroke="#36393D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M13.5 8.5h-10M8.5 3.5l-5 5 5 5"></path>
+            </svg>
+          </div>
+          <div class="purification-nav__pagination"></div>
+          <div class="purification-nav__arrow next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none">
+              <path stroke="#36393D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3.5 8.5h10M8.5 3.5l5 5-5 5"></path>
+            </svg>
+          </div>
+        </div>
+
+        <div class="steps__request request">
+          <img class="request__icon" src="images/steps-phone.svg" width="40" height="40"
+            alt="В фокусе иконка трубки телефона">
+          <div class="request__text-box">
+            <h3 class="request__text-box__title">Что будет после заявки?</h3>
+            <p class="request__text-box__text">Оператор перезвонит поможет с&nbsp;расчётом стоимости и&nbsp;подбором
+              системы. Никакого спама&nbsp;— только один звонок для&nbsp;уточнения деталей</p>
+          </div>
+
+          <button class="request__btn button button--secondary" data-modal="callback">Оставить заявку</button>
+          <img class="request__bubbles-bg" src="images/request-bubble.png" width="357" height="117"
+            alt="В фокусе капли воды">
+        </div>
+      </div>
+    </section>
+
+    <section id="block-diff" class="page__difference difference">
+      <div class="difference__header">
+        <div class="container">
+          <h2 class="difference__title section-title" data-aos="fade-up">Система <span
+              class="highlighted">«АБФ-ОСМО-6»</span> против
+            <br class="difference__br">бутилированной
+            воды
+          </h2>
+        </div>
+
+        <img class="difference__bg difference__bg--left" src="images/difference-bubble-1.png" width="564" height="564"
+          alt="В фокусе капли воды">
+        <img class="difference__bg difference__bg--right" src="images/difference-bubble-2.png" width="564" height="564"
+          alt="В фокусе капли воды">
+      </div>
+      <div class="difference__wrapper">
+        <div class="difference__content container">
+          <div class="difference__card card card--first" data-aos="fade-right" data-aos-delay="500">
+            <div class="card__header">
+              <p class="card__header-name">Система очистки</p>
+              <p class="card__header-title">АБФ-ОСМО-6</p>
+            </div>
+            <div class="card__item card__item-price">
+              <p class="card__item-name">Стоимость литра</p>
+              ~0,3–0,5 ₽ за литр (после установки)
+            </div>
+            <div class="card__item card__item-quality">
+              <p class="card__item-name">Качество</p>
+              <div class="card__item-rating">
+                <img class="card__item-rating-img" src="images/star.svg" width="25" height="25"
+                  alt="Желтая иконка звездочки">
+                <img class="card__item-rating-img" src="images/star.svg" width="25" height="25"
+                  alt="Желтая иконка звездочки">
+                <img class="card__item-rating-img" src="images/star.svg" width="25" height="25"
+                  alt="Желтая иконка звездочки">
+                <img class="card__item-rating-img" src="images/star.svg" width="25" height="25"
+                  alt="Желтая иконка звездочки">
+                <img class="card__item-rating-img" src="images/star.svg" width="25" height="25"
+                  alt="Желтая иконка звездочки">
+              </div>
+              <p class="card__item-text">
+                <strong>Стабильно высокое</strong> — 6-ступенчатая фильтрация и минерализация
+              </p>
+            </div>
+            <div class="card__item">
+              <p class="card__item-name">Удобство</p>
+              <p class="card__item-text"><strong>Вода всегда под рукой</strong>, не нужно заказывать и таскать бутылки
+              </p>
+            </div>
+            <div class="card__item">
+              <p class="card__item-name">Экологичность</p>
+              <div class="card__item-rating">
+                <img class="card__item-rating-img" src="images/leaf.svg" width="20" height="20"
+                  alt="Иконка зеленого листа дерева">
+                <img class="card__item-rating-img" src="images/leaf.svg" width="20" height="20"
+                  alt="Иконка зеленого листа дерева">
+                <img class="card__item-rating-img" src="images/leaf.svg" width="20" height="20"
+                  alt="Иконка зеленого листа дерева">
+                <img class="card__item-rating-img" src="images/leaf.svg" width="20" height="20"
+                  alt="Иконка зеленого листа дерева">
+                <img class="card__item-rating-img" src="images/leaf.svg" width="20" height="20"
+                  alt="Иконка зеленого листа дерева">
+                <img class="card__item-rating-img" src="images/leaf.svg" width="20" height="20"
+                  alt="Иконка зеленого листа дерева">
+              </div>
+              <p class="card__item-text"><strong>Без пластиковых отходов</strong>, минимальный углеродный след</p>
+            </div>
+            <div class="card__item">
+              <p class="card__item-name">Запас воды</p>
+              <p class="card__item-text"><strong>Постоянный</strong> — автоматическое пополнение из водопровода</p>
+            </div>
+            <button class="difference__btn button button--secondary" data-modal="callback">Оставить заявку</button>
+          </div>
+          <div class="difference__card card card--second" data-aos="fade-right" data-aos-delay="1000">
+            <div class="card__header">
+              <p class="card__header-name">Доставка</p>
+              <p class="card__header-title">Бутилированная вода</p>
+            </div>
+            <div class="card__item">
+              <p class="card__item-name">Стоимость литра</p>
+              <p class="card__item-price">10–40 ₽ за литр</p>
+            </div>
+            <div class="card__item card__item-quality">
+              <p class="card__item-name">Качество</p>
+              <div class="card__item-rating">
+                <img class="card__item-rating-img" src="images/star.svg" width="25" height="25"
+                  alt="Желтая иконка звездочки">
+                <img class="card__item-rating-img" src="images/star.svg" width="25" height="25"
+                  alt="Желтая иконка звездочки">
+                <img class="card__item-rating-img" src="images/star.svg" width="25" height="25"
+                  alt="Желтая иконка звездочки">
+                <img class="card__item-rating-img" src="images/star-gray.svg" width="25" height="25"
+                  alt="Желтая иконка звездочки">
+                <img class="card__item-rating-img" src="images/star-gray.svg" width="25" height="25"
+                  alt="Желтая иконка звездочки">
+              </div>
+              <p class="card__item-text">
+                <strong>Зависит от производителя</strong> и условий хранения
+              </p>
+            </div>
+            <div class="card__item">
+              <p class="card__item-name">Удобство</p>
+              <p class="card__item-text">Требуется <strong>регулярная доставка</strong> и хранение объёмных бутылей</p>
+            </div>
+            <div class="card__item">
+              <p class="card__item-name">Экологичность</p>
+              <div class="card__item-rating">
+                <img class="card__item-rating-img" src="images/leaf.svg" width="25" height="25"
+                  alt="Иконка зеленого листа дерева">
+                <img class="card__item-rating-img" src="images/leaf.svg" width="25" height="25"
+                  alt="Иконка зеленого листа дерева">
+                <img class="card__item-rating-img" src="images/leaf-gray.svg" width="25" height="25"
+                  alt="Иконка зеленого листа дерева">
+                <img class="card__item-rating-img" src="images/leaf-gray.svg" width="25" height="25"
+                  alt="Иконка зеленого листа дерева">
+                <img class="card__item-rating-img" src="images/leaf-gray.svg" width="25" height="25"
+                  alt="Иконка зеленого листа дерева">
+                <img class="card__item-rating-img" src="images/leaf-gray.svg" width="25" height="25"
+                  alt="Иконка зеленого листа дерева">
+              </div>
+              <p class="card__item-text">Много <strong>одноразового пластика</strong>, транспортные выбросы</p>
+            </div>
+            <div class="card__item">
+              <p class="card__item-name">Запас воды</p>
+              <p class="card__item-text"><strong>Ограничен объёмом бутылей</strong>, возможны перебои в доставке</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <button class="difference__btn difference__btn--tablet button button--secondary" data-modal="callback">Оставить
+          заявку</button>
+      </div>
+    </section>
+
+    <section id="block-form" class="page__deal deal">
+      <img class="deal__bubble" src="images/deal-bubble.png" width="564" height="564" alt="В фокусе капли воды">
+
+      <div class="container deal__container">
+        <div class="deal__content">
+          <h2 class="deal__title section-title" data-aos="fade-up">
+            Экономьте в деньгах <br> и выигрывайте в <span class="highlighted">здоровье семьи</span>
+          </h2>
+
+          <p class="deal__subtitle" data-aos="fade-up">
+            Оставьте заявку для расчета стоимости
+          </p>
+
+          <form class="deal__form" data-aos="fade-up">
+            <div class="deal__fields">
+              <label class="deal__field deal__field--tel">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none" aria-hidden="true">
+                  <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"
+                    d="M12.1 14.5a.9.9 0 0 0 1-.3l.4-.4a1.8 1.8 0 0 1 1.4-.7h2.6a1.7 1.7 0 0 1 1.8 1.8v2.6a1.7 1.7 0 0 1-1.8 1.8A15.7 15.7 0 0 1 1.7 3.4a1.7 1.7 0 0 1 1.8-1.8h2.6A1.7 1.7 0 0 1 8 3.5v2.6a1.7 1.7 0 0 1-.7 1.4l-.4.3A.9.9 0 0 0 6.5 9c1.2 2.4 3.2 4.4 5.6 5.6Z">
+                  </path>
+                </svg>
+                <input class="deal__input" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __"
+                  autocomplete="off">
+              </label>
+
+              <button class="deal__button button button--secondary" type="button">
+                Рассчитать стоимость
+              </button>
+            </div>
+
+            <label class="deal__consent">
+              <span class="deal__checkbox-wrap">
+                <input class="deal__checkbox" type="checkbox" name="acceptence" value="checkbox" checked>
+                <span class="deal__checkbox-indicator"></span>
+              </span>
+              <span class="deal__consent-text">
+                Я даю <a href="https://waterdel.store/privacy-policy/" target="_blank">согласие на обработку</a>
+                моих персональных данных в соответствии с
+                <a href="https://waterdel.store/privacy-policy/" target="_blank">Политикой конфиденциальности</a>
+              </span>
+            </label>
+          </form>
+        </div>
+
+        <div class="deal__image">
+          <img class="deal__image-bg" src="images/deal-bg.png" width="751" height="561"
+            alt="Водоочистительный прибор в фокусе">
+        </div>
+      </div>
+    </section>
+
+    <section id="block-installations" class="page__installations installations installations--style-wrap">
+      <div class="container installations__container">
+        <h2 class="installations__title section-title" data-aos="fade-up">Более <span class="highlighted--second">2 500
+            установок</span> в Москве и области
+        </h2>
+
+        <ul class="installations__list">
+          <li class="installations__item" data-aos="zoom-in" data-aos-delay="300">
+            <div class="installations__item-pic">
+              <img class="installations__item-img" src="images/installations-image-1.jpg" width="453" height="275"
+                alt="Заявка и консультация">
+            </div>
+
+            <div class="installations__bottom">
+              <h3 class="installations__item-heading">Заявка и консультация</h3>
+              <p class="installations__item-text"><strong>Район/город:</strong> «Химки, ЖК Левобережный»</p>
+              <p class="installations__item-text"><strong>Тип объекта:</strong> «Квартира 65 м²»</p>
+              <p class="installations__item-text"><strong>Установленная система:</strong> «АБФ-ОСМО-6»</p>
+            </div>
+          </li>
+          <li class="installations__item" data-aos="zoom-in" data-aos-delay="450">
+            <div class="installations__item-pic">
+              <img class="installations__item-img" src="images/installations-image-2.jpg" width="453" height="275"
+                alt="Заявка и консультация">
+            </div>
+
+            <div class="installations__bottom">
+              <h3 class="installations__item-heading">Заявка и консультация</h3>
+              <p class="installations__item-text"><strong>Район/город:</strong> «Химки, ЖК Левобережный»</p>
+              <p class="installations__item-text"><strong>Тип объекта:</strong> «Квартира 65 м²»</p>
+              <p class="installations__item-text"><strong>Установленная система:</strong> «АБФ-ОСМО-6»</p>
+            </div>
+          </li>
+          <li class="installations__item" data-aos="zoom-in" data-aos-delay="600">
+            <div class="installations__item-pic">
+              <img class="installations__item-img" src="images/installations-image-3.jpg" width="453" height="275"
+                alt="Заявка и консультация">
+            </div>
+
+            <div class="installations__bottom">
+              <h3 class="installations__item-heading">Заявка и консультация</h3>
+              <p class="installations__item-text"><strong>Район/город:</strong> «Химки, ЖК Левобережный»</p>
+              <p class="installations__item-text"><strong>Тип объекта:</strong> «Квартира 65 м²»</p>
+              <p class="installations__item-text"><strong>Установленная система:</strong> «АБФ-ОСМО-6»</p>
+            </div>
+          </li>
+          <li class="installations__item" data-aos="zoom-in" data-aos-delay="750">
+            <div class="installations__item-pic">
+              <img class="installations__item-img" src="images/installations-image-4.jpg" width="453" height="275"
+                alt="Заявка и консультация">
+            </div>
+
+            <div class="installations__bottom">
+              <h3 class="installations__item-heading">Заявка и консультация</h3>
+              <p class="installations__item-text"><strong>Район/город:</strong> «Химки, ЖК Левобережный»</p>
+              <p class="installations__item-text"><strong>Тип объекта:</strong> «Квартира 65 м²»</p>
+              <p class="installations__item-text"><strong>Установленная система:</strong> «АБФ-ОСМО-6»</p>
+            </div>
+          </li>
+          <li class="installations__item" data-aos="zoom-in" data-aos-delay="900">
+            <div class="installations__item-pic">
+              <img class="installations__item-img" src="images/installations-image-5.jpg" width="453" height="275"
+                alt="Заявка и консультация">
+            </div>
+
+            <div class="installations__bottom">
+              <h3 class="installations__item-heading">Заявка и консультация</h3>
+              <p class="installations__item-text"><strong>Район/город:</strong> «Химки, ЖК Левобережный»</p>
+              <p class="installations__item-text"><strong>Тип объекта:</strong> «Квартира 65 м²»</p>
+              <p class="installations__item-text"><strong>Установленная система:</strong> «АБФ-ОСМО-6»</p>
+            </div>
+          </li>
+          <li class="installations__item" data-aos="zoom-in" data-aos-delay="1050">
+            <div class="installations__item-pic">
+              <img class="installations__item-img" src="images/installations-image-6.jpg" width="453" height="275"
+                alt="Заявка и консультация">
+            </div>
+
+            <div class="installations__bottom">
+              <h3 class="installations__item-heading">Заявка и консультация</h3>
+              <p class="installations__item-text"><strong>Район/город:</strong> «Химки, ЖК Левобережный»</p>
+              <p class="installations__item-text"><strong>Тип объекта:</strong> «Квартира 65 м²»</p>
+              <p class="installations__item-text"><strong>Установленная система:</strong> «АБФ-ОСМО-6»</p>
+            </div>
+          </li>
+        </ul>
+
+        <button class="installations__btn button button--secondary" data-aos="fade-right" data-aos-delay="1200">Показать
+          еще</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page__footer footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__logo">
+          <a class="custom-logo-link" href="#hero" aria-label="На главную">
+            <img src="images/logo.png" width="140" height="52" alt="Логотип WATER Delivery">
+          </a>
+        </div>
+
+        <div class="footer__socials socials">
+          <span class="socials__slogan">Наши соц.сети:</span>
+
+          <ul class="socials__items">
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <img src="images/vk.svg" width="35" height="35" alt="Иконки социальной сети Вконтакте">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <img src="images/tg.svg" width="35" height="35" alt="Иконки социальной сети Телеграм">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <img src="images/rutube.svg" width="35" height="35" alt="Иконки социальной сети Рутюба">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__contacts">
+          <div class="footer__footer-contact footer-contact">
+            <p class="footer-contact__title">Пн — Пт с 9:00 до 18:00</p>
+            <a href="tel:+74950031222" class="footer-contact__link">
+              <span class="link-tool">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                  <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                    d="M9.22 11.05a.7.7 0 0 0 .81-.2l.24-.32a1.3 1.3 0 0 1 1.06-.53h2a1.33 1.33 0 0 1 1.34 1.33v2a1.33 1.33 0 0 1-1.34 1.34 12 12 0 0 1-12-12 1.33 1.33 0 0 1 1.34-1.34h2A1.33 1.33 0 0 1 6 2.67v2a1.3 1.3 0 0 1-.53 1.06l-.32.24a.7.7 0 0 0-.19.82 9.3 9.3 0 0 0 4.26 4.26">
+                  </path>
+                </svg>
+              </span>
+              <span class="footer-contact__phone">+7 495 003 12 22</span>
+            </a>
+          </div>
+
+          <div class="footer-contact footer-contact--email">
+            <p class="footer-contact__title">По любым обращениям:</p>
+            <a href="mailto:order@waterdel.ru" class="footer-contact__link">
+              <span class="link-tool">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                  <path strok="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                    d="m14.67 4.67-6 3.81a1.3 1.3 0 0 1-1.34 0l-6-3.81"></path>
+                  <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                    d="M13.33 2.67H2.67c-.74 0-1.34.6-1.34 1.33v8c0 .74.6 1.33 1.34 1.33h10.66c.74 0 1.34-.6 1.34-1.33V4c0-.74-.6-1.33-1.34-1.33">
+                  </path </svg>
+              </span>
+              <span class="footer-contact__email">order@waterdel.ru</span>
+            </a>
+          </div <div class="footer__socials socials socials--second">
+          <span class="socials__slogan">Наши соц.сети:</span>
+
+          <ul class="socials__items">
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <img src="images/vk.svg" width="35" height="35" alt="Иконки социальной сети Вконтакте">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <img src="images/tg.svg" width="35" height="35" alt="Иконки социальной сети Телеграм">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <img src="images/rutube.svg" width="35" height="35" alt="Иконки социальной сети Рутюба">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">© ООО «ВАМ-ВОДА» 2021-2024, все права защищены</p>
+      <a href="https://waterdel.store/privacy-policy/" target="_blank" class="footer__privacy">Политика
+        конфиденциальности</a>
+    </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
