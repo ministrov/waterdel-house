@@ -1,0 +1,19 @@
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="70" height="70" rx="20" fill="#0B54A0"/>
+<mask id="mask0_2038_4555" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="15" y="15" width="40" height="40">
+<path d="M54 54V16H16V54H54Z" fill="white" stroke="white" stroke-width="2"/>
+</mask>
+<g mask="url(#mask0_2038_4555)">
+<path d="M47.1041 53.8281H22.8965V49.1211H47.1041V53.8281Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path d="M47.1036 44.4141H22.896L26.9306 20.8789H43.069L47.1036 44.4141Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M41.0521 44.4141H28.9482L30.9656 20.8789H39.0348L41.0521 44.4141Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M49.1211 49.1211H20.8789V44.4141H49.1211V49.1211Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<mask id="mask1_2038_4555" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="15" y="15" width="40" height="40">
+<path d="M54 54V16H16V54H54Z" fill="white" stroke="white" stroke-width="2"/>
+</mask>
+<g mask="url(#mask1_2038_4555)">
+<path d="M45.0865 20.8789H24.9136V16.1719H45.0865V20.8789Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path d="M35 20.8789V44.4141" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+</svg>
