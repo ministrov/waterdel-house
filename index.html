@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -13,8 +13,128 @@
   <title>waterdel-house</title>
 </head>
 
-<body>
-  <h2>hsfslsfjslf</h2>
+<body class="page__body">
+  <header class="page__header header">
+    <div class="container">
+      <div class="header__content">
+        <div id="mobile-menu-burger" class="header__burger-wrapper header-tablet__aside">
+          <button class="header__burger link-tool" type="button">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.66666 8H13.3333" stroke="white" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round">
+              </path>
+              <path d="M2.66666 12H13.3333" stroke="white" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+              <path d="M2.66666 4H13.3333" stroke="white" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round">
+              </path>
+            </svg>
+          </button>
+        </div>
+
+        <div class="header__logo logo">
+          <a class="logo__link" href="#hero">
+            <img class="logo__icon" src="image/logo.png" width="140" height="52" alt="Логотип WATER Delivery">
+          </a>
+        </div>
+
+        <nav class="header__nav">
+          <ul id="menu-header-menu" class="header__menu">
+            <li class="header__menu-item">
+              <a href="#problems" class="header__menu-link">Проблемы</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#solution" class="header__menu-link">Решения</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#how-it-works" class="header__menu-link">Как работает</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#components" class="header__menu-link">Оснащение</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#for-whom" class="header__menu-link">Кому подходит</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#reviews" class="header__menu-link">Отзывы</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#faq" class="header__menu-link">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__contacts header-tablet__aside">
+          <a href="tel:+74950031222" class="header-phone">
+            <span class="header-phone__icon link-tool">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                  d="M9.22 11.05a.7.7 0 0 0 .81-.2l.24-.32a1.3 1.3 0 0 1 1.06-.53h2a1.33 1.33 0 0 1 1.34 1.33v2a1.33 1.33 0 0 1-1.34 1.34 12 12 0 0 1-12-12 1.33 1.33 0 0 1 1.34-1.34h2A1.33 1.33 0 0 1 6 2.67v2a1.3 1.3 0 0 1-.53 1.06l-.32.24a.7.7 0 0 0-.19.82 9.3 9.3 0 0 0 4.26 4.26">
+                </path>
+              </svg>
+            </span>
+            <span class="header-phone__value">+7 495 003 12 22</span>
+          </a>
+
+          <button class="header__btn button button--primary" data-modal="callback">Заказать звонок</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="header__mobile-menu mobile-menu">
+      <button class="mobile-menu__close" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none">
+          <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 1 1 11M1 1l10 10">
+          </path>
+        </svg>
+      </button>
+      <a href="/" class="mobile-menu__logo">
+        <img class="mobile-menu__icon" src="image/logo.png" width="140" height="52" alt="Логотип WATER Delivery">
+      </a>
+      <nav class="mobile__nav">
+        <ul id="mobile-menu-list" class="mobile__menu">
+          <li class="menu-item">
+            <a href="/#problems">Проблемы</a>
+          </li>
+          <li class="menu-item">
+            <a href="/#solution">Решения</a>
+          </li>
+          <li class="menu-item">
+            <a href="/#how-it-works">Как работает</a>
+          </li>
+          <li class="menu-item">
+            <a href="/#components">Оснащение</a>
+          </li>
+          <li class="menu-item">
+            <a href="/#for-whom">Кому подходит</a>
+          </li>
+          <li class="menu-item">
+            <a href="/#reviews">Отзывы</a>
+          </li>
+          <li class="menu-item">
+            <a href="/#faq">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__contacts mobile__contacts">
+        <a href="tel:+74950031222" class="header-phone">
+          <span class="header-phone__icon link-tool">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+              <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                d="M9.22 11.05a.7.7 0 0 0 .81-.2l.24-.32a1.3 1.3 0 0 1 1.06-.53h2a1.33 1.33 0 0 1 1.34 1.33v2a1.33 1.33 0 0 1-1.34 1.34 12 12 0 0 1-12-12 1.33 1.33 0 0 1 1.34-1.34h2A1.33 1.33 0 0 1 6 2.67v2a1.3 1.3 0 0 1-.53 1.06l-.32.24a.7.7 0 0 0-.19.82 9.3 9.3 0 0 0 4.26 4.26">
+              </path>
+            </svg>
+          </span>
+          <span class="header-phone__value">+7 495 003 12 22</span>
+        </a>
+        <button class="header__btn button button--primary" data-modal="callback">Заказать звонок</button>
+      </div>
+    </div>
+
+    <div class="header__progressbar progressbar"></div>
+  </header>
+  <main></main>
+  <footer></footer>
 </body>
 
 </html>
