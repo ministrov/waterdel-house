@@ -227,6 +227,264 @@
           alt="Стрелка вниз для скролла к следующей секции">
       </a>
     </section>
+
+    <section id="block-quiz" class="page__quiz quiz">
+      <div class="container">
+        <h2 class="quiz__title section-title" data-aos="fade-up">
+          Ответьте на 3 <span class="highlighted--second">вопроса</span> и мы подберем идеальное решение и <span
+            class="highlighted--second">зафиксируем скидку 50%</span>
+        </h2>
+
+        <div class="quiz__titles">
+          <p class="quiz__titles-text active">Какую проблему с водой вы хотите решить?</p>
+          <p class="quiz__titles-text">Сколько человек в семье будут регулярно пить эту воду?</p>
+          <p class="quiz__titles-text">Есть ли под мойкой свободное местодля бака и блоков фильтров, а также
+            розетка?</p>
+        </div>
+
+        <form class="quiz__form quiz-form" data-aos="fade-up" data-aos-offset="200" data-aos-delay="200">
+          <fieldset class="quiz-form__row" data-step="1">
+            <div class="quiz-form__left">
+              <p class="quiz-form__left-title">Какую проблему с водой вы хотите решить?</p>
+              <div class="quiz-form__left-steps">
+                <span class="quiz-form__left-steps-line" style="width: 33.333333333333%"></span>
+              </div>
+              <div class="quiz-form__left-question">
+                <span class="quiz-form__left-question-value">Вопрос 1 из 3</span>
+                <button class="quiz-form__left-btn button button--secondary" type="button">Следующий вопрос</button>
+              </div>
+
+              <img class="quiz-form__bubbles" src="images/quiz-form-bubbles.png" width="415" height="574" alt="">
+              <img class="quiz-form__image" src="images/quiz-form-img.png" width="381" height="201" alt="">
+            </div>
+            <div class="quiz-form__right">
+              <p class="quiz-form__right-text">Выберите один или несколько вариантов:</p>
+
+              <div class="quiz-form__grid">
+                <label class="quiz-form__box">
+                  <input type="checkbox" name="problems[]" value="Привкус или запах (хлор, металл, другие)">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="images/quiz-card-1.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">Привкус или запах <br>
+                      (хлор, металл, другие)</span>
+                  </span>
+                </label>
+                <label class="quiz-form__box">
+                  <input type="checkbox" name="problems[]" value="Накипь в чайнике и налёт на кранах">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="images/quiz-card-2.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">Накипь в чайнике <br>
+                      и налёт на кранах</span>
+                  </span>
+                </label>
+                <label class="quiz-form__box">
+                  <input type="checkbox" name="problems[]" value="Мутность или возможные частицы">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="images/quiz-card-3.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">Мутность <br>
+                      или возможные частицы</span>
+                  </span>
+                </label>
+                <label class="quiz-form__box">
+                  <input type="checkbox" name="problems[]"
+                    value="Переживаю за безопасность (вирусы, бактерии, нитраты)">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="images/quiz-card-4.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">Переживаю за безопасность (вирусы, бактерии, нитраты)</span>
+                  </span>
+                </label>
+                <label class="quiz-form__box">
+                  <input type="checkbox" name="problems[]" value="Всё в порядке, просто хочу воду лучшего качества">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="images/quiz-card-5.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">Всё в порядке, просто хочу воду лучшего качества</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="quiz-form__row" data-step="2">
+            <div class="quiz-form__left">
+              <p class="quiz-form__left-title">Сколько человек в семье будут регулярно пить эту воду?</p>
+              <div class="quiz-form__left-steps">
+                <span style="width: 66.666666666667%"></span>
+              </div>
+              <div class="quiz-form__left-question">
+                <span class="quiz-form__left-question-value">Вопрос 2 из 3</span>
+                <button class="quiz-form__left-btn button button--secondary" type="button">Следующий вопрос</button>
+              </div>
+
+              <img class="quiz-form__bubbles" src="images/quiz-form-bubbles.png" width="415" height="574" alt="">
+              <img class="quiz-form__image" src="images/quiz-form-img.png" width="381" height="201" alt="">
+            </div>
+            <div class="quiz-form__right">
+              <p class="quiz-form__right-text">Выберите один или несколько вариантов:</p>
+
+              <div class="quiz-form__grid">
+                <label class="quiz-form__box">
+                  <input type="radio" name="peoples" value="1-2 человека">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="images/quiz-card-6.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">1-2 человека</span>
+                  </span>
+                </label>
+                <label class="quiz-form__box">
+                  <input type="radio" name="peoples" value="3-4 человека">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="images/quiz-card-7.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">3-4 человека</span>
+                  </span>
+                </label>
+                <label class="quiz-form__box">
+                  <input type="radio" name="peoples" value="5 и более человек">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="images/quiz-card-8.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">5 и более человек</span>
+                  </span>
+                </label>
+                <label class="quiz-form__box">
+                  <input type="radio" name="peoples" value="Не только пить, но и готовить каждый день на всю семью">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="images/quiz-card-9.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">Не только пить, но и готовить каждый день на всю семью</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="quiz-form__row" data-step="3">
+            <div class="quiz-form__left">
+              <p class="quiz-form__left-title">Есть ли под мойкой свободное место для бака и блоков фильтров, а также
+                розетка?</p>
+              <div class="quiz-form__left-steps">
+                <span style="width: 100%"></span>
+              </div>
+              <div class="quiz-form__left-question">
+                <span class="quiz-form__left-question-value">Вопрос 3 из 3</span>
+                <button class="quiz-form__left-btn button button--secondary" type="button">Далее</button>
+              </div>
+
+              <img class="quiz-form__bubbles" src="images/quiz-form-bubbles.png" width="415" height="574" alt="">
+              <img class="quiz-form__image" src="images/quiz-form-img.png" width="381" height="201" alt="">
+            </div>
+            <div class="quiz-form__right">
+              <p class="quiz-form__right-text">Выберите один вариант:</p>
+
+              <div class="quiz-form__grid">
+                <label class="quiz-form__box">
+                  <input type="radio" name="free_space"
+                    value="Просторно. Система легко поместится (как две-три обувные коробки)">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="image/quiz-card-10.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">Просторно. Система легко поместится (как две-три обувные
+                      коробки)</span>
+                  </span>
+                </label>
+                <label class="quiz-form__box">
+                  <input type="radio" name="free_space"
+                    value="Средне. Только компактное решение (как одна коробка или рюкзак)">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="images/quiz-card-11.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">Средне. Только компактное решение (как одна коробка или
+                      рюкзак)</span>
+                  </span>
+                </label>
+                <label class="quiz-form__box">
+                  <input type="checkbox" name="problems[]" value="Мутность или возможные частицы">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="images/quiz-card-12.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">Мутность <br>
+                      или возможные частицы</span>
+                  </span>
+                </label>
+                <label class="quiz-form__box">
+                  <input type="radio" name="free_space"
+                    value="Очень тесно.&nbsp;Мало места, нужна самая тонкая или угловая система">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="images/quiz-card-13.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">Очень тесно. Мало места, нужна самая тонкая или угловая
+                      система</span>
+                  </span>
+                </label>
+                <label class="quiz-form__box">
+                  <input type="radio" name="free_space"
+                    value="Не уверен(а), нужна консультация и замер мастера по установке">
+                  <span class="quiz-form__cart">
+                    <img class="quiz-form__cart-img" src="images/quiz-card-5.webp" width="299" height="301" alt="">
+                    <span class="quiz-form__check"></span>
+                    <span class="quiz-form__cart-text">Не уверен(а), нужна консультация и замер мастера по
+                      установке</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="quiz-form__row quiz-form__row--final" data-step="final">
+            <div class="quiz-form__left">
+              <p class="quiz-form__title">Укажите телефон — закрепим скидку 50% за вашим номером</p>
+              <div class="quiz-form__box">
+                <label class="quiz-form__field quiz-form__field--tel">
+                  <svg class="quiz-form__icon" xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none">
+                    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"
+                      d="M12.1 14.5a.9.9 0 0 0 1-.3l.4-.4a1.8 1.8 0 0 1 1.4-.7h2.6a1.7 1.7 0 0 1 1.8 1.8v2.6a1.7 1.7 0 0 1-1.8 1.8A15.7 15.7 0 0 1 1.7 3.4a1.7 1.7 0 0 1 1.8-1.8h2.6A1.7 1.7 0 0 1 8 3.5v2.6a1.7 1.7 0 0 1-.7 1.4l-.4.3A.9.9 0 0 0 6.5 9c1.2 2.4 3.2 4.4 5.6 5.6Z">
+                    </path>
+                  </svg>
+                  <input class="quiz-form__input" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __"
+                    autocomplete="off">
+                </label>
+                <div class="quiz-form__actions">
+                  <button class="quiz-form__button quiz-form__button--back" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M6 16L2 12L6 8" stroke="#163800" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                      <path d="M22 12L2 12" stroke="#163800" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </svg>
+                  </button>
+                  <button class="quiz-form__button quiz-form__button--submit" type="submit">Отправить</button>
+                </div>
+                <label class="fancy-form__acceptence acceptance">
+                  <div class="acceptance__checkbox-wrap">
+                    <input class="acceptance__checkbox" type="checkbox" name="acceptence" value="checkbox" checked="">
+                    <div class="acceptance__checkbox-indicator"></div>
+                  </div>
+                  <p class="acceptance__consent-text">Соглашаюсь с <a href="https://waterdel.store/privacy-policy/"
+                      target="_blank">условиями передачи данных</a></p>
+                </label>
+              </div>
+              <img src="image/quiz-form-bubbles.png" width="415" height="574" alt="">
+            </div>
+            <div class="quiz-form__right">
+              <div class="quiz-form__info">
+                <span class="quiz-form__checkmark">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M19.7705 5.93066L8.89705 16.8041L3.95459 11.8616" stroke="white" stroke-width="2.54184"
+                      stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </span>
+                <p>Готово! Оставьте контакты — перезвоним через 15 минут</p>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </section>
   </main>
 
   <footer class="page__footer footer">
