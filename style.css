@@ -286,7 +286,7 @@ a:hover {
   content: '';
   width: 14px;
   height: 14px;
-  background-image: url("../icons/tick-2.svg");
+  background-image: url("../images/tick-2.svg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   opacity: 0;
