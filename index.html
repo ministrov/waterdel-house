@@ -1493,6 +1493,34 @@
     </section>
   </main>
 
+  <div id="modal-success" class="success" role="dialog" aria-modal="true" aria-labelledby="modal-title"
+    aria-describedby="modal-subtitle" tabindex="-1">
+    <div class="success__inner">
+      <div class="success__border">
+        <div class="success__modal modal">
+          <button class="modal__close" type="button" aria-label="Закрыть модальное окно">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M15 5L5 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              </path>
+              <path d="M5 5L15 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              </path>
+            </svg>
+          </button>
+
+          <div class="modal__header">
+            <p class="modal__title" id="modal-title">Спасибо за заявку!</p>
+            <p class="modal__subtitle" id="modal-subtitle">Мы свяжемся с вами в ближайшее время по указанным контактам.
+            </p>
+          </div>
+
+          <div class="success__btn-wrap">
+            <button class="success__btn button button--secondary" type="button" modal-close="">Хорошо</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div id="callback" class="page__popup popup">
     <div class="popup__inner">
       <div class="popup__border">
