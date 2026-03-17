@@ -1028,16 +1028,15 @@
               </button>
             </div>
 
-            <label class="deal__consent">
-              <span class="deal__checkbox-wrap">
-                <input class="deal__checkbox" type="checkbox" name="acceptence" value="checkbox" checked>
-                <span class="deal__checkbox-indicator"></span>
-              </span>
-              <span class="deal__consent-text">
-                Я даю <a href="https://waterdel.store/privacy-policy/" target="_blank">согласие на обработку</a>
-                моих персональных данных в соответствии с
-                <a href="https://waterdel.store/privacy-policy/" target="_blank">Политикой конфиденциальности</a>
-              </span>
+            <label class="deal__acceptence acceptance">
+              <div class="acceptance__checkbox-wrap">
+                <input class="acceptance__checkbox" type="checkbox" name="acceptence" value="checkbox" checked="">
+                <div class="acceptance__checkbox-indicator"></div>
+              </div>
+              <p class="acceptance__consent-text">Я даю <a href="https://waterdel.store/privacy-policy/"
+                  target="_blank">согласие на обработку</a> моих персональных данных в соответствии с <a
+                  href="https://waterdel.store/privacy-policy/" target="_blank">Политикой конфиденциальности</a>
+              </p>
             </label>
           </form>
         </div>
@@ -1355,6 +1354,93 @@
             </div>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <section id="block-mini-form" class="page__mini-form mini-form mini-form--second">
+      <img class="mini-form__bubbles mini-form__bubble--left" src="images/mini-form-bubble-1.png" width="564"
+        height="564" alt="В фокусе капли воды">
+      <img class="mini-form__bubbles mini-form__bubble--right" src="images/mini-form-bubble-2.png" width="564"
+        height="564" alt="В фокусе капли воды">
+      <div class="container mini-form__container">
+        <div class="mini-form__content">
+          <div class="mini-form__content-row">
+            <div class="mini-form__text-box">
+              <h2 class="mini-form__title section-title" data-aos="fade-up">Готовы пить <span class="highlighted">чистую
+                  воду</span> уже завтра?
+              </h2>
+              <p class="mini-form__text" data-aos="fade-up">Оставьте заявку — установим систему в любой удобный день для
+                вас</p>
+            </div>
+
+
+            <ul class="mini-form__list">
+              <li class="mini-form__item" data-aos="fade-right" data-aos-delay="300">
+                <img class="mini-form__item-img" src="images/tick.svg" width="40" height="40"
+                  alt="Иконка галочки на светло синем фоне в виде звездочки">
+                <p class="mini-form__item-text">Перезвоним вам <br class="mini-form__br"> за 30 секунд</p>
+              </li>
+              <li class="mini-form__item" data-aos="fade-right" data-aos-delay="450">
+                <img class="mini-form__item-img" src="images/tick.svg" width="40" height="40"
+                  alt="Иконка галочки на светло синем фоне в виде звездочки">
+                <p class="mini-form__item-text">Гарантируем <br class="mini-form__br"> без спама</p>
+              </li>
+              <li class="mini-form__item" data-aos="fade-right" data-aos-delay="600">
+                <img class="mini-form__item-img" src="images/tick.svg" width="40" height="40"
+                  alt="Иконка галочки на светло синем фоне в виде звездочки">
+                <p class="mini-form__item-text">Гарантия на <br class="mini-form__br"> установку - 2 года</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mini-form__fancy-form fancy-form" data-aos="fade-up">
+          <div class="fancy-form__promo-count promo-count">
+            <svg class="promo-count__icon" xmlns="http://www.w3.org/2000/svg" width="45" height="60" fill="none"
+              viewBox="0 0 45 60">
+              <path fill="url(#a)" fill-rule="evenodd"
+                d="M44.567 38.645C44.07 50.383 34.291 59.75 22.296 59.75 9.982 59.75 0 49.55 0 37.71c0-1.583-.029-4.747 2.372-10.083 1.437-3.194 2.338-5.2 2.846-7.035.28-1.008.823-2.61 2.372 0 .913 1.539.949 3.752.949 3.752s3.398-2.578 5.692-7.503c3.363-7.22.68-11.537-.237-14.538-.317-1.038-.517-2.904 1.66-2.11 2.218.809 8.083 4.867 11.148 9.144 4.375 6.105 5.93 11.959 5.93 11.959s1.4-1.719 1.897-3.518c.561-2.03.57-4.042 2.372-1.875 1.714 2.06 4.26 5.932 5.693 9.613 2.601 6.685 1.873 13.13 1.873 13.13Z"
+                clip-rule="evenodd"></path>
+              <path fill="#FC9502" fill-rule="evenodd"
+                d="M22.296 59.75c-8.515 0-15.418-6.824-15.418-15.242 0-5.079 2.07-8.163 6.38-12.344 2.759-2.678 5.341-5.966 6.439-8.206.216-.44.707-2.738 2.603-.048.995 1.41 2.554 3.92 3.553 6.06 1.724 3.692 2.135 7.27 2.135 7.27s1.689-.985 2.846-3.518c.373-.816 1.128-3.907 3.236-.817 1.547 2.268 3.673 6.346 3.643 11.603 0 8.418-6.903 15.241-15.417 15.241Z"
+                clip-rule="evenodd"></path>
+              <path fill="#FCE202" fill-rule="evenodd"
+                d="M22.533 43.101c2.194 0 2.194 4.017 4.98 9.38 1.856 3.57-.92 7.268-4.98 7.268-4.061 0-6.167-3.254-6.167-7.269 0-4.014 3.973-9.379 6.167-9.379Z"
+                clip-rule="evenodd"></path>
+              <defs>
+                <linearGradient id="a" x1="22.329" x2="22.329" y1="59.794" y2=".045" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FF4C0D"></stop>
+                  <stop offset="1" stop-color="#FC9502"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+            <p class="promo-count__text">Установок со скидкой осталось: 3</p>
+          </div>
+          <p class="fancy-form__legend">Заказать установку <br> <span class="highlighted">со скидкой 50%</span></p>
+          <div class="fancy-form__field fancy-form__field--tel">
+            <label class="fancy-form__label">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none">
+                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"
+                  d="M12.1 14.5a.9.9 0 0 0 1-.3l.4-.4a1.8 1.8 0 0 1 1.4-.7h2.6a1.7 1.7 0 0 1 1.8 1.8v2.6a1.7 1.7 0 0 1-1.8 1.8A15.7 15.7 0 0 1 1.7 3.4a1.7 1.7 0 0 1 1.8-1.8h2.6A1.7 1.7 0 0 1 8 3.5v2.6a1.7 1.7 0 0 1-.7 1.4l-.4.3A.9.9 0 0 0 6.5 9c1.2 2.4 3.2 4.4 5.6 5.6Z">
+                </path>
+              </svg>
+              <input class="fancy-form__input" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __"
+                autocomplete="off">
+            </label>
+            <button class="fancy-form__button button button--secondary" data-action="send">Оставить заявку</button>
+          </div>
+
+          <label class="fancy-form__acceptence acceptance">
+            <div class="acceptance__checkbox-wrap">
+              <input class="acceptance__checkbox" type="checkbox" name="acceptence" value="checkbox" checked="">
+              <div class="acceptance__checkbox-indicator"></div>
+            </div>
+            <p class="acceptance__consent-text">Я даю <a href="https://waterdel.store/privacy-policy/"
+                target="_blank">согласие на обработку</a> моих персональных данных в соответствии с <a
+                href="https://waterdel.store/privacy-policy/" target="_blank">Политикой конфиденциальности</a>
+            </p>
+          </label>
+        </div>
       </div>
     </section>
   </main>
