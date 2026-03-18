@@ -1403,12 +1403,60 @@ fieldset[data-step="final"] {
 
 .savings__bg {
   position: absolute;
+  z-index: 2;
   bottom: -104px;
   left: 0;
   width: 100%;
   height: 5.49vw;
 }
 
+/* Perfect */
+
+.perfect {
+  position: relative;
+  z-index: 1;
+  padding-top: 160px;
+  padding-bottom: 80px;
+}
+
+.perfect__inner {
+  max-width: 690px;
+}
+
+.perfect__title {
+  margin-bottom: 40px;
+}
+
+.perfect__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.perfect__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--title-text-200);
+}
+
+.perfect__bg-container {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.perfect__bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 
 
