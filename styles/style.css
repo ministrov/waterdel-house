@@ -927,6 +927,14 @@ fieldset[data-step="final"] {
   transition: .3s;
 }
 
+.quiz-form__box>input:checked~.quiz-form__cart::before {
+  box-shadow: 0px 0px 0px 2px rgba(7, 73, 135, 1) inset;
+}
+
+.quiz-form__cart:hover {
+  border-color: #074987;
+}
+
 .quiz-form__cart-img {
   position: absolute;
   z-index: -2;
