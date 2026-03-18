@@ -459,7 +459,7 @@
                     autocomplete="off">
                 </label>
                 <div class="quiz-form__actions">
-                  <button class="quiz-form__button quiz-form__button--back" type="button">
+                  <button class="quiz-form__button-next button button--primary" type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                       <path d="M6 16L2 12L6 8" stroke="#163800" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round"></path>
@@ -467,7 +467,7 @@
                         stroke-linejoin="round"></path>
                     </svg>
                   </button>
-                  <button class="quiz-form__button quiz-form__button--submit" type="submit">Отправить</button>
+                  <button class="quiz-form__button-send button button--secondary" type="submit">Отправить</button>
                 </div>
                 <label class="quiz-form__acceptence acceptance">
                   <span class="acceptance__checkbox-wrap">
@@ -478,17 +478,16 @@
                       target="_blank">условиями передачи данных</a></span>
                 </label>
               </div>
-              <img src="images/quiz-form-bubbles.png" width="415" height="574" alt="В фокусе капли воды">
+              <img class="quiz-form__bubbles" src="images/quiz-form-bubbles.png" width="415" height="574"
+                alt="В фокусе капли воды">
             </div>
             <div class="quiz-form__right">
               <div class="quiz-form__info">
                 <span class="quiz-form__checkmark">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M19.7705 5.93066L8.89705 16.8041L3.95459 11.8616" stroke="white" stroke-width="2.54184"
-                      stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
+                  <img src="images/quiz-form-checkbox-success.svg" width="53" height="53"
+                    alt="В фокусе чекбокс на синем фоне">
                 </span>
-                <p>Готово! Оставьте контакты — перезвоним через 15 минут</p>
+                <p class="quiz-form__info-text">Готово! Оставьте контакты — перезвоним через 15 минут</p>
               </div>
             </div>
           </fieldset>
