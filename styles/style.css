@@ -961,6 +961,10 @@ fieldset[data-step="final"] {
   border-radius: 4px;
 }
 
+.quiz-form__box>input[type="radio"]~.quiz-form__cart .quiz-form__check {
+  border-radius: 50%;
+}
+
 .quiz-form__box>input:checked~.quiz-form__cart .quiz-form__check {
   background-color: var(--accent-green);
   border-color: var(--accent-green);
