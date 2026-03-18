@@ -3056,3 +3056,17 @@ fieldset[data-step="final"] {
   color: #D9EDFF;
   opacity: 0.6;
 }
+
+@media screen and (max-width: 1448px) {}
+
+@media screen and (max-width: 1248px) {}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (min-width: 681px) and (max-width: 767px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 680px) {}
+
+@media screen and (max-width: 580px) {}
