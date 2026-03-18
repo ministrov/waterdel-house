@@ -1272,6 +1272,144 @@ fieldset[data-step="final"] {
   transform: translateX(-50%);
 }
 
+/* Savings */
+
+.savings {
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: var(--accent-white);
+}
+
+.savings__title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.savings__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 60px;
+}
+
+.savings__item {
+  position: relative;
+  padding: 25px;
+  background-color: var(--basic-white);
+  box-shadow: 0 0 67px 0 rgba(213, 223, 234, 0.60);
+}
+
+.savings__item--final {
+  z-index: 1;
+}
+
+.savings__item-img {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: -18px;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.savings__item:first-child {
+  border-radius: 15px 0 0 15px;
+}
+
+.savings__item--final .savings__item-text {
+  color: var(--basic-white);
+}
+
+.savings__item--final .savings__item-slogan {
+  margin-top: -4px;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--basic-white);
+}
+
+.savings__item-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  border-radius: 0 15px 15px 0;
+}
+
+.savings__item-image {
+  display: inline-block;
+  margin-bottom: 13px;
+}
+
+.savings__item-text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--title-text-100);
+}
+
+.savings__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.savings__icon {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  right: -18px;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.savings__list-item {
+  flex: 1 1 calc((100% - 120px) / 4);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.savings__list-item-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  aspect-ratio: 1;
+  border-radius: 15px;
+  background: linear-gradient(140deg, #BAFFF7 2.65%, #18DECA 100%);
+  box-shadow: -1.326px -1.326px 7.071px 0 rgba(255, 255, 255, 0.30) inset, 2.652px 2.652px 8.839px 0 rgba(255, 255, 255, 0.45) inset;
+}
+
+.savings__list-item-title {
+  font-family: var(--ff-headers);
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: unset;
+}
+
+.savings__list-item-text {
+  font-size: 15px;
+  line-height: 1.54;
+  color: var(--title-text-400);
+}
+
+.savings__bg {
+  position: absolute;
+  bottom: -104px;
+  left: 0;
+  width: 100%;
+  height: 5.49vw;
+}
+
+
 
 
 /* Footer */
