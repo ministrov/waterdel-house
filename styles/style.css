@@ -3057,7 +3057,59 @@ fieldset[data-step="final"] {
   opacity: 0.6;
 }
 
-@media screen and (max-width: 1448px) {}
+@media screen and (max-width: 1448px) {
+  :root {
+    --container-width: 1200px;
+  }
+
+  .section-title {
+    font-size: 34px;
+  }
+
+  .header__content {
+    gap: 40px;
+  }
+
+  .banner__content {
+    width: 45%;
+  }
+
+  .banner__right {
+    width: 40%;
+    margin-left: auto;
+  }
+
+  .banner__bg-img {
+    max-width: 100%;
+    width: 111vw;
+  }
+
+  .banner__title {
+    font-size: 44px;
+    line-height: 55px;
+  }
+
+  .banner__title::before {
+    display: none;
+  }
+
+  .conditions__list {
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  .quiz-form__right {
+    padding: 35px 20px;
+  }
+
+  .difference__title {
+    font-size: 34px;
+  }
+
+  .deal__button {
+    width: calc(50% - 7.5px);
+  }
+}
 
 @media screen and (max-width: 1248px) {}
 
