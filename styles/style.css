@@ -4363,8 +4363,35 @@ fieldset[data-step="final"] {
   }
 
   .contacts__list {
-    grid-gap: 16px;
+    grid-gap: 10px;
     margin-top: 24px;
+  }
+
+  .contacts__item {
+    min-height: auto;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+  }
+
+  .contacts__top-title {
+    font-size: 12px;
+  }
+
+  .contacts__top-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .contacts__bottom-link {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .contacts__bottom-text {
+    margin-top: 0;
+    font-size: 12px;
   }
 }
 
