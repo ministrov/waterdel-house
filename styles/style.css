@@ -3306,6 +3306,10 @@ fieldset[data-step="final"] {
 }
 
 @media screen and (max-width: 992px) {
+  .page {
+    overflow-x: hidden;
+  }
+
   .section-title {
     font-size: 23px;
     margin-bottom: 20px;
@@ -3902,6 +3906,7 @@ fieldset[data-step="final"] {
   }
 
   .team__slider {
+    grid-template-columns: repeat(5, 1fr);
     gap: 16px;
     width: 100vw;
     margin-top: 0;
@@ -3994,8 +3999,8 @@ fieldset[data-step="final"] {
   }
 
   .mini-form {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 57px;
+    padding-bottom: 53px;
   }
 
   .mini-form::before {
@@ -4073,6 +4078,10 @@ fieldset[data-step="final"] {
   .contacts {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+
+  .contacts__map {
+    max-height: 411px;
   }
 
   .contacts__list {
