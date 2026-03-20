@@ -4401,4 +4401,39 @@ fieldset[data-step="final"] {
 
 @media screen and (max-width: 680px) {}
 
-@media screen and (max-width: 580px) {}
+@media screen and (max-width: 580px) {
+  .header__content {
+    justify-content: space-between;
+  }
+
+  .header-tablet__aside {
+    flex-grow: unset;
+  }
+
+  .header-phone__value {
+    display: none;
+  }
+
+  .footer__contacts {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer__socials.socials {
+    display: flex;
+  }
+
+  .footer__socials.socials .socials__slogan {
+    display: none;
+  }
+
+  .socials.socials--second {
+    display: none;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
