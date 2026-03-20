@@ -1500,22 +1500,17 @@ fieldset[data-step="final"] {
   color: var(--title-text-400);
 }
 
-.savings__bg {
-  position: absolute;
-  z-index: 2;
-  bottom: -104px;
-  left: 0;
-  width: 100%;
-  height: 5.49vw;
-}
-
 /* Perfect */
 
 .perfect {
   position: relative;
   z-index: 1;
-  padding-top: 160px;
   padding-bottom: 80px;
+}
+
+.perfect__bg-top {
+  display: flex;
+  margin-bottom: 80px;
 }
 
 .perfect__inner {
@@ -3609,8 +3604,11 @@ fieldset[data-step="final"] {
   }
 
   .perfect {
-    padding-top: 50px;
     padding-bottom: 50px;
+  }
+
+  .perfect__bg-top {
+    margin-bottom: 50px;
   }
 
   .perfect__inner {
