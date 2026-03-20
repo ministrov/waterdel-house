@@ -4174,7 +4174,199 @@ fieldset[data-step="final"] {
 
 @media screen and (min-width: 681px) and (max-width: 767px) {}
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+  :root {
+    --container-padding: 14px;
+  }
+
+  .button--secondary {
+    padding: 12px 17px;
+  }
+
+  .purification-nav {
+    display: flex;
+    margin-top: 0;
+  }
+
+  .header__logo {
+    max-width: 96px;
+  }
+
+  .banner {
+    padding-top: 100px;
+    padding-bottom: 70vw;
+  }
+
+  .banner__content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .banner__bubbles {
+    left: -88px;
+    bottom: 156px;
+    width: 335px;
+  }
+
+  .banner__content {
+    width: 100%;
+    margin-right: 0;
+    padding-bottom: 0;
+  }
+
+  .banner__title {
+    margin-bottom: 12px;
+  }
+
+  .banner__br-two {
+    display: none;
+  }
+
+  .banner__text {
+    max-width: 100%;
+  }
+
+  .banner__right {
+    width: calc(100% + 14px);
+    margin-right: -14px;
+    margin-top: 50px;
+  }
+
+  .banner__btn-wrapper {
+    display: block;
+    padding: 0;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    border: none;
+  }
+
+  .conditions__item {
+    width: 100%;
+    align-items: center;
+  }
+
+  .banner__scroll {
+    right: 0;
+  }
+
+  .quiz-form__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .problems {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .system {
+    padding-bottom: 0;
+  }
+
+  .system__inner {
+    max-width: 100%;
+  }
+
+  .system__bg-box {
+    position: relative;
+    overflow: hidden;
+    width: 150vw;
+    margin-left: -50vw;
+    object-position: right;
+    max-width: unset;
+  }
+
+  .calc-form {
+    padding: 35px 21px;
+  }
+
+  .calc-form__row {
+    flex-direction: column;
+    align-items: initial;
+    gap: 20px;
+  }
+
+  .steps__purification-swiper .swiper-wrapper {
+    overflow: visible;
+    margin-bottom: 30px;
+  }
+
+  .purification-swiper__slide {
+    width: 266px;
+  }
+
+  .difference__content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .difference__card {
+    width: 300px;
+    padding: 20px;
+  }
+
+  .difference__bg--right {
+    display: none;
+  }
+
+  .deal__container {
+    flex-direction: column;
+  }
+
+  .deal__bubble {
+    display: none;
+  }
+
+  .deal__content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .deal__form {
+    max-width: 100%;
+  }
+
+  .deal__image {
+    position: static;
+  }
+
+  .deal__image-bg {
+    position: static;
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    margin: 0 -12px;
+    width: calc(100% + 24px);
+    aspect-ratio: 362 / 172;
+    object-position: center top;
+    object-fit: cover;
+  }
+
+  .mini-form__container {
+    flex-direction: column;
+    gap: 45px;
+  }
+
+  .mini-form__fancy-form {
+    width: 100%;
+  }
+
+  .mini-form .mini-form__content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contacts__map {
+    height: 350px;
+  }
+
+  .contacts__list {
+    grid-gap: 16px;
+    margin-top: 24px;
+  }
+}
 
 @media screen and (max-width: 680px) {}
 
