@@ -4401,4 +4401,54 @@ fieldset[data-step="final"] {
 
 @media screen and (max-width: 680px) {}
 
-@media screen and (max-width: 580px) {}
+@media screen and (max-width: 580px) {
+  .header__content {
+    justify-content: space-between;
+  }
+
+  .header-tablet__aside {
+    flex-grow: unset;
+  }
+
+  .header-phone__value {
+    display: none;
+  }
+
+  .quiz-form__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .problems__items {
+    gap: 20px;
+  }
+
+  .problems__item {
+    flex-direction: row;
+    flex-basis: 100%;
+    align-items: flex-start;
+    column-gap: 20px;
+  }
+
+  .footer__contacts {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer__socials.socials {
+    display: flex;
+  }
+
+  .footer__socials.socials .socials__slogan {
+    display: none;
+  }
+
+  .socials.socials--second {
+    display: none;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
