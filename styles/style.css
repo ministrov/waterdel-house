@@ -4088,6 +4088,10 @@ fieldset[data-step="final"] {
     margin-top: 20px;
   }
 
+  .socials__slogan {
+    display: none;
+  }
+
   .success__inner {
     max-width: 550px;
   }
