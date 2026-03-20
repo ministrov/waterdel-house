@@ -4414,6 +4414,21 @@ fieldset[data-step="final"] {
     display: none;
   }
 
+  .quiz-form__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .problems__items {
+    gap: 20px;
+  }
+
+  .problems__item {
+    flex-direction: row;
+    flex-basis: 100%;
+    align-items: flex-start;
+    column-gap: 20px;
+  }
+
   .footer__contacts {
     flex-direction: column;
     gap: 20px;
