@@ -3911,6 +3911,14 @@ fieldset[data-step="final"] {
     margin-right: auto;
   }
 
+  .team__quote {
+    justify-content: center;
+    gap: 4px;
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+  }
+
   .team__slider {
     margin-top: 0;
     display: flex;
@@ -3958,7 +3966,7 @@ fieldset[data-step="final"] {
 
   .team__quote-text {
     font-size: 12px;
-    text-align: center;
+    text-align: unset;
   }
 
   .team__stats {
