@@ -3529,6 +3529,10 @@ fieldset[data-step="final"] {
     font-size: 12px;
   }
 
+  .filter__item-text-br {
+    display: none;
+  }
+
   .filter__bg {
     width: 500px;
     bottom: 120px;
@@ -4451,6 +4455,10 @@ fieldset[data-step="final"] {
     column-gap: 20px;
   }
 
+  .filter__item-text-br {
+    display: inline;
+  }
+
   .filter__list {
     grid-template-columns: 1fr;
     grid-gap: 7px;
@@ -4574,7 +4582,7 @@ fieldset[data-step="final"] {
   }
 
   .contacts__map {
-    height: 280px;
+    height: 411px;
   }
 
   .contacts__list {
@@ -4599,6 +4607,10 @@ fieldset[data-step="final"] {
   }
 
   .socials.socials--second {
+    display: none;
+  }
+
+  .footer__contacts .socials__items {
     display: none;
   }
 
