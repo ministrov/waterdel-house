@@ -4413,6 +4413,10 @@ fieldset[data-step="final"] {
 @media screen and (max-width: 680px) {}
 
 @media screen and (max-width: 580px) {
+  .acceptance__agreement {
+    font-size: 12px;
+  }
+
   .header__content {
     justify-content: space-between;
   }
@@ -4572,6 +4576,33 @@ fieldset[data-step="final"] {
     grid-gap: 16px;
   }
 
+  .mini-form--second {
+    overflow: hidden;
+  }
+
+  .mini-form::before {
+    top: 186px;
+    filter: blur(94px);
+    width: 100%;
+  }
+
+  .mini-form__bubble--left {
+    right: unset;
+    width: 274px;
+    height: 274px;
+    top: 50%;
+    left: -84px;
+    transform: translateY(-50%);
+  }
+
+  .mini-form__bubble--right {
+    bottom: 0;
+    right: 0;
+    width: 274px;
+    height: 274px;
+    transform: rotate(342deg) translateY(50%);
+  }
+
   .mini-form__form {
     width: 100%;
     margin-top: 0;
@@ -4579,6 +4610,18 @@ fieldset[data-step="final"] {
 
   .mini-form__container {
     gap: 80px;
+  }
+
+  .mini-form__fancy-form {
+    padding: 7px 12px 25px;
+  }
+
+  .fancy-form__field {
+    gap: 20px;
+  }
+
+  .fancy-form__button {
+    font-size: 13px;
   }
 
   .contacts__map {
