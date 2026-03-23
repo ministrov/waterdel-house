@@ -9,6 +9,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&family=Onest:wght@100..900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="styles/style.css">
   <title>waterdel-house</title>
 </head>
@@ -76,7 +78,9 @@
             <span class="header-phone__value">+7 495 003 12 22</span>
           </a>
 
-          <button class="header__btn button button--primary" data-modal="callback">Заказать звонок</button>
+          <button class="header__btn button button--primary" type="button" aria-label="Заказать звонок"
+            data-modal="callback">Заказать
+            звонок</button>
         </div>
       </div>
     </div>
@@ -199,7 +203,8 @@
                   d="M22.533 43.101c2.194 0 2.194 4.017 4.98 9.38 1.856 3.57-.92 7.268-4.98 7.268-4.061 0-6.167-3.254-6.167-7.269 0-4.014 3.973-9.379 6.167-9.379Z"
                   clip-rule="evenodd"></path>
                 <defs>
-                  <linearGradient id="a" x1="22.329" x2="22.329" y1="59.794" y2=".045" gradientUnits="userSpaceOnUse">
+                  <linearGradient id="a-banner" x1="22.329" x2="22.329" y1="59.794" y2=".045"
+                    gradientUnits="userSpaceOnUse">
                     <stop stop-color="#FF4C0D"></stop>
                     <stop offset="1" stop-color="#FC9502"></stop>
                   </linearGradient>
@@ -475,7 +480,7 @@
                     <span class="acceptance__checkbox-indicator"></span>
                   </span>
                   <span class="acceptance__agreement">Соглашаюсь с <a href="https://waterdel.store/privacy-policy/"
-                      target="_blank">условиями передачи данных</a></span>
+                      target="_blank" rel="noopener noreferrer">условиями передачи данных</a></span>
                 </label>
               </div>
               <img class="quiz-form__bubbles" src="images/quiz-form-bubbles.png" width="415" height="574"
@@ -568,11 +573,11 @@
             </h3>
 
             <div class="calc-form__row">
-              <label for="phone" class="calc-form__label">
+              <label for="phone-calc" class="calc-form__label">
                 <img class="calc-form__label-image" src="images/phone.svg" width="21" height="21"
                   alt="Иконка трубки телефона">
-                <input type="tel" id="phone" name="phone" class="calc-form__input" placeholder="+7 (___) ___ - __ - __"
-                  autocomplete="off" aria-describedby="phone-help">
+                <input type="tel" id="phone-calc" name="phone" class="calc-form__input"
+                  placeholder="+7 (___) ___ - __ - __" autocomplete="off" aria-describedby="phone-help">
               </label>
 
               <button class="calc-form__btn button button--secondary" type="submit">Рассчитать стоимость</button>
@@ -587,8 +592,8 @@
                 <input class="acceptance__checkbox" type="checkbox" name="acceptence" value="checkbox" checked="">
                 <span class="acceptance__checkbox-indicator"></span>
               </span>
-              <span class="acceptance__agreement">Я даю <a href="https://waterdel.store/privacy-policy/"
-                  target="_blank">согласие на обработку</a> моих персональных данных в соответствии с <a
+              <span class="acceptance__agreement">Я даю <a href="https://waterdel.store/privacy-policy/" target="_blank"
+                  rel="noopener noreferrer">согласие на обработку</a> моих персональных данных в соответствии с <a
                   href="https://waterdel.store/privacy-policy/" target="_blank">Политикой конфиденциальности</a></span>
             </label>
           </form>
@@ -610,33 +615,39 @@
             <span class="filter__num">01.</span>
             <img class="filter__item-image" src="images/filter-icon-1.svg" width="60" height="60"
               alt="Механическая очистка">
-            <p class="filter__item-text"><strong>Механическая очистка</strong> — удаляет песок, ржавчину, осадок</p>
+            <p class="filter__item-text"><strong>Механическая очистка</strong> — <br class="filter__item-text-br">
+              удаляет песок, ржавчину, осадок</p>
           </li>
           <li class="filter__item" data-aos="fade-in" data-aos-delay="450">
             <span class="filter__num">02.</span>
             <img class="filter__item-image" src="images/filter-icon-2.svg" width="60" height="60" alt="Угольный фильтр">
-            <p class="filter__item-text"><strong>Угольный фильтр</strong> — убирает хлор и органику</p>
+            <p class="filter__item-text"><strong>Угольный фильтр</strong> — <br class="filter__item-text-br"> убирает
+              хлор и органику</p>
           </li>
           <li class="filter__item" data-aos="fade-in" data-aos-delay="600">
             <span class="filter__num">03.</span>
             <img class="filter__item-image" src="images/filter-icon-3.svg" width="60" height="60" alt="Карбон-блок">
-            <p class="filter__item-text"><strong>Карбон-блок</strong> — тонкая очистка от примесей</p>
+            <p class="filter__item-text"><strong>Карбон-блок</strong> — <br class="filter__item-text-br"> тонкая очистка
+              от примесей</p>
           </li>
           <li class="filter__item" data-aos="fade-in" data-aos-delay="750">
             <span class="filter__num">04.</span>
             <img class="filter__item-image" src="images/filter-icon-4.svg" width="60" height="60"
               alt="Мембрана обратного осмоса">
-            <p class="filter__item-text"><strong>Мембрана обратного осмоса</strong> — удаляет 99,97% загрязнений</p>
+            <p class="filter__item-text"><strong>Мембрана обратного осмоса</strong> — <br class="filter__item-text-br">
+              удаляет 99,97% загрязнений</p>
           </li>
           <li class="filter__item" data-aos="fade-in" data-aos-delay="900">
             <span class="filter__num">05.</span>
             <img class="filter__item-image" src="images/filter-icon-5.svg" width="60" height="60" alt="Постфильтр">
-            <p class="filter__item-text"><strong>Постфильтр</strong> — улучшает вкус воды</p>
+            <p class="filter__item-text"><strong>Постфильтр</strong> — <br class="filter__item-text-br"> улучшает вкус
+              воды</p>
           </li>
           <li class="filter__item" data-aos="fade-in" data-aos-delay="1050">
             <span class="filter__num">06.</span>
             <img class="filter__item-image" src="images/filter-icon-6.svg" width="60" height="60" alt="Минерализатор">
-            <p class="filter__item-text"><strong>Минерализатор</strong> — добавляет полезные минералы</p>
+            <p class="filter__item-text"><strong>Минерализатор</strong> — <br class="filter__item-text-br"> добавляет
+              полезные минералы</p>
           </li>
         </ul>
 
@@ -872,7 +883,8 @@
               системы. Никакого спама&nbsp;— только один звонок для&nbsp;уточнения деталей</p>
           </div>
 
-          <button class="request__btn button button--secondary" data-modal="callback">Оставить заявку</button>
+          <button class="request__btn button button--secondary" data-modal="callback" type="button">Оставить
+            заявку</button>
           <img class="request__bubbles-bg" src="images/request-bubble.png" width="357" height="117"
             alt="В фокусе капли воды">
         </div>
@@ -950,7 +962,8 @@
               <p class="card__item-name">Запас воды</p>
               <p class="card__item-text"><strong>Постоянный</strong> — автоматическое пополнение из водопровода</p>
             </div>
-            <button class="difference__btn button button--secondary" data-modal="callback">Оставить заявку</button>
+            <button class="difference__btn button button--secondary" type="button" data-modal="callback">Оставить
+              заявку</button>
           </div>
           <div class="difference__card card card--second" data-aos="fade-right" data-aos-delay="1000">
             <div class="card__header">
@@ -1010,7 +1023,8 @@
       </div>
 
       <div class="container">
-        <button class="difference__btn difference__btn--tablet button button--secondary" data-modal="callback">Оставить
+        <button class="difference__btn difference__btn--tablet button button--secondary" data-modal="callback"
+          type="button">Оставить
           заявку</button>
       </div>
     </section>
@@ -1050,8 +1064,8 @@
                 <input class="acceptance__checkbox" type="checkbox" name="acceptence" value="checkbox" checked="">
                 <span class="acceptance__checkbox-indicator"></span>
               </span>
-              <span class="acceptance__agreement">Я даю <a href="https://waterdel.store/privacy-policy/"
-                  target="_blank">согласие на обработку</a> моих персональных данных в соответствии с <a
+              <span class="acceptance__agreement">Я даю <a href="https://waterdel.store/privacy-policy/" target="_blank"
+                  rel="noopener noreferrer">согласие на обработку</a> моих персональных данных в соответствии с <a
                   href="https://waterdel.store/privacy-policy/" target="_blank">Политикой конфиденциальности</a>
               </span>
             </label>
@@ -1152,7 +1166,8 @@
           </li>
         </ul>
 
-        <button class="installations__btn button button--secondary" data-aos="fade-right" data-aos-delay="1200">Показать
+        <button class="installations__btn button button--secondary" data-aos="fade-right" data-aos-delay="1200"
+          type="button">Показать
           еще</button>
       </div>
     </section>
@@ -1183,8 +1198,8 @@
             </figure>
           </div>
 
-          <div class="team__slider">
-            <article class="team__card team__card--owner" data-aos="zoom-in" data-aos-delay="300">
+          <div class="team__slider swiper swiper-wrapper">
+            <article class="team__card team__card--owner swiper-slide" data-aos="zoom-in" data-aos-delay="300">
               <h3 class="visually-hidden">Карточка номер 0</h3>
               <figure class="team__photo-wrap">
                 <img class="team__photo" src="images/team-image-owner.jpg" width="276" height="300" alt="Петров Иван">
@@ -1194,7 +1209,7 @@
                 </figcaption>
               </figure>
             </article>
-            <article class="team__card" data-aos="zoom-in" data-aos-delay="450">
+            <article class="team__card swiper-slide" data-aos="zoom-in" data-aos-delay="450">
               <h3 class="visually-hidden">Карточка номер 1</h3>
               <figure class="team__photo-wrap">
                 <img class="team__photo" src="images/team-image-2.jpg" width="276" height="300" alt="Сергей Иванов">
@@ -1205,7 +1220,7 @@
               </figure>
             </article>
 
-            <article class="team__card" data-aos="zoom-in" data-aos-delay="600">
+            <article class="team__card swiper-slide" data-aos="zoom-in" data-aos-delay="600">
               <h3 class="visually-hidden">Карточка номер 2</h3>
               <figure class="team__photo-wrap">
                 <img class="team__photo" src="images/team-image-3.jpg" width="276" height="300" alt="Иванов Петр">
@@ -1216,7 +1231,7 @@
               </figure>
             </article>
 
-            <article class="team__card" data-aos="zoom-in" data-aos-delay="750">
+            <article class="team__card swiper-slide" data-aos="zoom-in" data-aos-delay="750">
               <h3 class="visually-hidden">Карточка номер 3</h3>
               <figure class="team__photo-wrap">
                 <img class="team__photo" src="images/team-image-4.jpg" width="276" height="300" alt="Анна Смирнова">
@@ -1227,7 +1242,7 @@
               </figure>
             </article>
 
-            <article class="team__card" data-aos="zoom-in" data-aos-delay="900">
+            <article class="team__card swiper-slide" data-aos="zoom-in" data-aos-delay="900">
               <h3 class="visually-hidden">Карточка номер 4</h3>
               <figure class="team__photo-wrap">
                 <img class="team__photo" src="images/team-image-5.jpg" width="276" height="300" alt="Дмитрий Козлов">
@@ -1424,7 +1439,8 @@
                 d="M22.533 43.101c2.194 0 2.194 4.017 4.98 9.38 1.856 3.57-.92 7.268-4.98 7.268-4.061 0-6.167-3.254-6.167-7.269 0-4.014 3.973-9.379 6.167-9.379Z"
                 clip-rule="evenodd"></path>
               <defs>
-                <linearGradient id="a" x1="22.329" x2="22.329" y1="59.794" y2=".045" gradientUnits="userSpaceOnUse">
+                <linearGradient id="a-mini-form" x1="22.329" x2="22.329" y1="59.794" y2=".045"
+                  gradientUnits="userSpaceOnUse">
                   <stop stop-color="#FF4C0D"></stop>
                   <stop offset="1" stop-color="#FC9502"></stop>
                 </linearGradient>
@@ -1443,7 +1459,8 @@
               <input class="fancy-form__input" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __"
                 autocomplete="off">
             </label>
-            <button class="fancy-form__button button button--secondary" data-action="send">Оставить заявку</button>
+            <button class="fancy-form__button button button--secondary" data-action="send" type="submit">Оставить
+              заявку</button>
           </div>
 
           <label class="fancy-form__acceptence acceptance">
@@ -1451,9 +1468,10 @@
               <input class="acceptance__checkbox" type="checkbox" name="acceptence" value="checkbox" checked="">
               <span class="acceptance__checkbox-indicator"></span>
             </span>
-            <span class="acceptance__agreement">Я даю <a href="https://waterdel.store/privacy-policy/"
-                target="_blank">согласие на обработку</a> моих персональных данных в соответствии с <a
-                href="https://waterdel.store/privacy-policy/" target="_blank">Политикой конфиденциальности</a>
+            <span class="acceptance__agreement">Я даю <a href="https://waterdel.store/privacy-policy/" target="_blank"
+                rel="noopener noreferrer">согласие на обработку</a> моих персональных данных в соответствии с <a
+                href="https://waterdel.store/privacy-policy/" target="_blank" rel="noopener noreferrer">Политикой
+                конфиденциальности</a>
             </span>
           </label>
         </div>
@@ -1595,7 +1613,8 @@
 
       <div class="footer__bottom">
         <p class="footer__copyright">© ООО «ВАМ-ВОДА» 2021-2024, все права защищены</p>
-        <a href="https://waterdel.store/privacy-policy/" target="_blank" class="footer__privacy">Политика
+        <a href="https://waterdel.store/privacy-policy/" target="_blank" rel="noopener noreferrer"
+          class="footer__privacy">Политика
           конфиденциальности</a>
       </div>
     </div>
@@ -1633,7 +1652,7 @@
     <div class="popup__inner">
       <div class="popup__border">
         <div class="popup__modal modal">
-          <button class="modal__close">
+          <button class="modal__close" type="button">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M15 5L5 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               </path>
@@ -1654,7 +1673,8 @@
                 d="M22.533 43.101c2.194 0 2.194 4.017 4.98 9.38 1.856 3.57-.92 7.268-4.98 7.268-4.061 0-6.167-3.254-6.167-7.269 0-4.014 3.973-9.379 6.167-9.379Z"
                 clip-rule="evenodd"></path>
               <defs>
-                <linearGradient id="a" x1="22.329" x2="22.329" y1="59.794" y2=".045" gradientUnits="userSpaceOnUse">
+                <linearGradient id="a-popup" x1="22.329" x2="22.329" y1="59.794" y2=".045"
+                  gradientUnits="userSpaceOnUse">
                   <stop stop-color="#FF4C0D"></stop>
                   <stop offset="1" stop-color="#FC9502"></stop>
                 </linearGradient>
@@ -1708,8 +1728,9 @@
                   <span class="acceptance__checkbox-indicator"></span>
                 </span>
                 <span class="acceptance__agreement">Я даю <a href="https://waterdel.store/privacy-policy/"
-                    target="_blank">согласие на обработку</a> моих персональных данных в соответствии с <a
-                    href="https://waterdel.store/privacy-policy/" target="_blank">Политикой конфиденциальности</a>
+                    target="_blank" rel="noopener noreferrer">согласие на обработку</a> моих персональных данных в
+                  соответствии с <a href="https://waterdel.store/privacy-policy/" target="_blank"
+                    rel="noopener noreferrer">Политикой конфиденциальности</a>
                 </span>
               </label>
               <div class="form__btn-wrapper">
@@ -1721,6 +1742,11 @@
       </div>
     </div>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script type="module" src="js/main.js"></script>
 </body>
