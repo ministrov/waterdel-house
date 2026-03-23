@@ -3306,10 +3306,6 @@ fieldset[data-step="final"] {
 }
 
 @media screen and (max-width: 992px) {
-  .page {
-    overflow-x: hidden;
-  }
-
   .section-title {
     font-size: 23px;
     margin-bottom: 20px;
@@ -3906,16 +3902,24 @@ fieldset[data-step="final"] {
   }
 
   .team__slider {
-    grid-template-columns: repeat(5, 1fr);
-    gap: 16px;
-    width: 100vw;
     margin-top: 0;
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+    overflow: hidden;
+    overflow-x: auto;
+    width: 100vw;
     margin-left: -24px;
     padding-left: 24px;
   }
 
   .team__card {
     min-width: 241px;
+  }
+
+  .team__card.swiper-slide {
+    flex-shrink: 0;
+    width: 241px;
   }
 
   .team__card.team__card--owner {
