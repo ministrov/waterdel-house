@@ -4636,6 +4636,14 @@ fieldset[data-step="final"] {
     font-size: 14px;
   }
 
+  .roomtypes__title {
+    max-width: 320px;
+  }
+
+  .roomtypes__list {
+    gap: 8px;
+  }
+
   .filter__item-text-br {
     display: inline;
   }
