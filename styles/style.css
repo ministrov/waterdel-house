@@ -4473,6 +4473,11 @@ fieldset[data-step="final"] {
     grid-template-columns: 1fr;
   }
 
+  .problems__title {
+    max-width: 317px;
+    margin-bottom: 30px;
+  }
+
   .problems__items {
     gap: 20px;
   }
@@ -4482,6 +4487,16 @@ fieldset[data-step="final"] {
     flex-basis: 100%;
     align-items: flex-start;
     column-gap: 20px;
+    padding: 16px;
+  }
+
+  .problems__item::before {
+    width: 39px;
+    height: 39px;
+  }
+
+  .problems__item-text {
+    font-size: 14px;
   }
 
   .filter__item-text-br {
