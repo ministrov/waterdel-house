@@ -3504,6 +3504,73 @@ fieldset[data-step="final"] {
     display: block;
   }
 
+  .roomtypes__title {
+    max-width: 800px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .roomtypes__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .roomtypes__item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--card-border);
+    border-radius: 25px;
+  }
+
+  .roomtypes__item-top {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 453 / 275;
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  .roomtypes__item-bottom {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 10px 20px;
+  }
+
+  .roomtypes__item-title {
+    font-family: var(--ff-headers);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    color: var(--title-text);
+  }
+
+  .roomtypes__bottom-list {
+    margin-top: 12px;
+    margin-bottom: 24px;
+  }
+
+  .bottom-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .bottom-list__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--title-text-200);
+    font-size: 16px;
+    line-height: 165%;
+  }
+
+
+
   .roomtypes {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -3517,6 +3584,10 @@ fieldset[data-step="final"] {
     margin-top: 7px;
     margin-bottom: 14px;
   }
+
+  /* .roomtypes__item.swiper-slide {
+    width: 233px;
+  } */
 
   .bottom-list {
     gap: 7px;
@@ -3538,9 +3609,17 @@ fieldset[data-step="final"] {
   }
 
   .roomtypes__btn {
+    width: 100%;
+    margin-top: auto;
     padding: 12px;
     font-size: 13px;
   }
+
+  /* .roomtypes__btn {
+    
+    padding: 21px;
+    margin-top: auto;
+  } */
 
   .filter {
     padding-top: 50px;
