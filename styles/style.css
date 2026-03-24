@@ -1279,6 +1279,12 @@ fieldset[data-step="final"] {
   cursor: pointer;
 }
 
+/* Roomtypes */
+
+.page__roomtypes {
+  display: none;
+}
+
 /* Filter */
 
 .filter {
@@ -3492,6 +3498,48 @@ fieldset[data-step="final"] {
 
   .calc-form__acceptance {
     margin: 0;
+  }
+
+  .page__roomtypes {
+    display: block;
+  }
+
+  .roomtypes {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .roomtypes__title {
+    max-width: 512px;
+  }
+
+  .roomtypes__bottom-list {
+    margin-top: 7px;
+    margin-bottom: 14px;
+  }
+
+  .bottom-list {
+    gap: 7px;
+  }
+
+  .bottom-list__item {
+    gap: 5px;
+  }
+
+  .bottom-list__item-icon {
+    display: flex;
+    width: 14px;
+    height: 14px;
+  }
+
+  .bottom-list__item-text {
+    font-size: 11px;
+    line-height: 165%;
+  }
+
+  .roomtypes__btn {
+    padding: 12px;
+    font-size: 13px;
   }
 
   .filter {
