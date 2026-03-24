@@ -3585,10 +3585,6 @@ fieldset[data-step="final"] {
     margin-bottom: 14px;
   }
 
-  /* .roomtypes__item.swiper-slide {
-    width: 233px;
-  } */
-
   .bottom-list {
     gap: 7px;
   }
@@ -3614,12 +3610,6 @@ fieldset[data-step="final"] {
     padding: 12px;
     font-size: 13px;
   }
-
-  /* .roomtypes__btn {
-    
-    padding: 21px;
-    margin-top: auto;
-  } */
 
   .filter {
     padding-top: 50px;
@@ -4451,6 +4441,26 @@ fieldset[data-step="final"] {
     flex-direction: column;
     align-items: initial;
     gap: 20px;
+  }
+
+  .roomtypes {
+    overflow: hidden;
+  }
+
+  .roomtypes__slider {
+    overflow: visible;
+  }
+
+  .roomtypes__list {
+    margin-bottom: 30px;
+  }
+
+  .roomtypes__item {
+    width: 266px;
+  }
+
+  .roomtypes__purification-nav {
+    margin-bottom: 50px;
   }
 
   .steps__purification-swiper .swiper-wrapper {
