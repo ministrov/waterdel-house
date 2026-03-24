@@ -895,6 +895,10 @@ fieldset[data-step="final"] {
   color: var(--title-text);
 }
 
+.quiz-form__right-br {
+  display: none;
+}
+
 .quiz-form__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1273,6 +1277,12 @@ fieldset[data-step="final"] {
   font-size: 13px;
   color: #92AFCA;
   cursor: pointer;
+}
+
+/* Roomtypes */
+
+.page__roomtypes {
+  display: none;
 }
 
 /* Filter */
@@ -3490,6 +3500,117 @@ fieldset[data-step="final"] {
     margin: 0;
   }
 
+  .page__roomtypes {
+    display: block;
+  }
+
+  .roomtypes__title {
+    max-width: 800px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .roomtypes__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .roomtypes__item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--card-border);
+    border-radius: 25px;
+  }
+
+  .roomtypes__item-top {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 453 / 275;
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  .roomtypes__item-bottom {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 10px 20px;
+  }
+
+  .roomtypes__item-title {
+    font-family: var(--ff-headers);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    color: var(--title-text);
+  }
+
+  .roomtypes__bottom-list {
+    margin-top: 12px;
+    margin-bottom: 24px;
+  }
+
+  .bottom-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .bottom-list__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--title-text-200);
+    font-size: 16px;
+    line-height: 165%;
+  }
+
+
+
+  .roomtypes {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .roomtypes__title {
+    max-width: 512px;
+  }
+
+  .roomtypes__bottom-list {
+    margin-top: 7px;
+    margin-bottom: 14px;
+  }
+
+  .bottom-list {
+    gap: 7px;
+  }
+
+  .bottom-list__item {
+    gap: 5px;
+  }
+
+  .bottom-list__item-icon {
+    display: flex;
+    width: 14px;
+    height: 14px;
+  }
+
+  .bottom-list__item-text {
+    font-size: 11px;
+    line-height: 165%;
+  }
+
+  .roomtypes__btn {
+    width: 100%;
+    margin-top: auto;
+    padding: 12px;
+    font-size: 13px;
+  }
+
   .filter {
     padding-top: 50px;
   }
@@ -4227,6 +4348,7 @@ fieldset[data-step="final"] {
 
 
   .banner__bubbles {
+    z-index: -2;
     left: -88px;
     bottom: 156px;
     width: 335px;
@@ -4277,6 +4399,18 @@ fieldset[data-step="final"] {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .quiz-form__right {
+    padding: 25px;
+  }
+
+  .quiz-form__right-text {
+    line-height: 130%;
+  }
+
+  .quiz-form__right-br {
+    display: inline-block;
+  }
+
   .problems {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -4307,6 +4441,26 @@ fieldset[data-step="final"] {
     flex-direction: column;
     align-items: initial;
     gap: 20px;
+  }
+
+  .roomtypes {
+    overflow: hidden;
+  }
+
+  .roomtypes__slider {
+    overflow: visible;
+  }
+
+  .roomtypes__list {
+    margin-bottom: 30px;
+  }
+
+  .roomtypes__item {
+    width: 266px;
+  }
+
+  .roomtypes__purification-nav {
+    margin-bottom: 50px;
   }
 
   .steps__purification-swiper .swiper-wrapper {
@@ -4456,6 +4610,11 @@ fieldset[data-step="final"] {
     grid-template-columns: 1fr;
   }
 
+  .problems__title {
+    max-width: 317px;
+    margin-bottom: 30px;
+  }
+
   .problems__items {
     gap: 20px;
   }
@@ -4465,6 +4624,24 @@ fieldset[data-step="final"] {
     flex-basis: 100%;
     align-items: flex-start;
     column-gap: 20px;
+    padding: 16px;
+  }
+
+  .problems__item::before {
+    width: 39px;
+    height: 39px;
+  }
+
+  .problems__item-text {
+    font-size: 14px;
+  }
+
+  .roomtypes__title {
+    max-width: 320px;
+  }
+
+  .roomtypes__list {
+    gap: 8px;
   }
 
   .filter__item-text-br {
