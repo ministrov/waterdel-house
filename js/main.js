@@ -15,5 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   initApp($);
 
-  console.log('jQuery version:', $.fn.jquery);
+  if (typeof window.jQuery === 'function') {
+    console.log('✅ jQuery version:', $.fn.jquery);
+  } else {
+    console.error('❌ jQuery is NOT loaded! Check script order.');
+  }
 });
