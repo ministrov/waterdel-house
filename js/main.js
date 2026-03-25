@@ -1,5 +1,3 @@
-// js/main.js
-
 import $ from './libs/jquery-wrapper.js';
 import { initApp } from './app/init.js';
 
@@ -14,10 +12,4 @@ document.addEventListener('DOMContentLoaded', () => {
   // Start app and pass $ to modules
 
   initApp($);
-
-  if (typeof window.jQuery === 'function') {
-    console.log('✅ jQuery version:', $.fn.jquery);
-  } else {
-    console.error('❌ jQuery is NOT loaded! Check script order.');
-  }
 });

@@ -1,5 +1,3 @@
-// js/features/mobileMenu/index.js
-
 export function initMobileMenu() {
   const $burger = $('#mobile-menu-burger');
   const $menu = $('.header__mobile-menu');
