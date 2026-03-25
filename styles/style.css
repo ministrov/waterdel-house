@@ -3163,6 +3163,10 @@ fieldset[data-step="final"] {
     transition: color var(--transition-value);
   }
 
+  .header__progressbar {
+    display: none;
+  }
+
   .button--secondary {
     font-size: 16px;
     padding: 21px 20px;
