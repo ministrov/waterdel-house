@@ -1,8 +1,7 @@
 // js/main.js
 
-import $ from './libs/jquery-wrapper';
+import $ from './libs/jquery-wrapper.js';
 import { initApp } from './app/init.js';
-import { easing } from 'jquery';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Initialize AOS.js
@@ -15,4 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Start app and pass $ to modules
 
   initApp($);
+
+  console.log('jQuery version:', $.fn.jquery);
 });
