@@ -975,6 +975,10 @@ a:hover {
   transition: all var(--transition-value);
 }
 
+.quiz-form__field:focus-within {
+  border-color: var(--basic-white);
+}
+
 .quiz-form__box>input {
   display: none;
 }
@@ -985,9 +989,9 @@ a:hover {
   font-family: var(--ff-main);
   border: none;
   padding: 0;
-
   background-color: transparent;
   outline: none;
+  color: var(--basic-white);
 }
 
 .quiz-form__input::placeholder {
@@ -1311,13 +1315,18 @@ a:hover {
   background-color: transparent;
   border: none;
   outline: none;
+  color: var(--basic-white);
 }
 
 .calc-form__input::placeholder {
   font-family: var(--ff-main);
   font-size: 13px;
   font-weight: 500;
-  color: var(--basic-white);
+  color: rgba(255, 255, 255, 0.46);
+}
+
+.calc-form__label:focus-within {
+  border-color: white;
 }
 
 .calc-form__help {
@@ -2071,6 +2080,10 @@ a:hover {
   flex-grow: 1;
 }
 
+.deal__field:focus-within {
+  border-color: var(--basic-white);
+}
+
 .deal__input {
   flex-grow: 1;
   max-width: none;
@@ -2079,6 +2092,7 @@ a:hover {
   padding: 0;
   background-color: transparent;
   outline: none;
+  color: var(--basic-white);
 }
 
 .deal__input::placeholder {
@@ -2659,6 +2673,10 @@ a:hover {
   transition: all var(--transition-value);
 }
 
+.fancy-form__label:focus-within {
+  border-color: var(--basic-white);
+}
+
 .fancy-form__field .fancy-form__label {
   flex-grow: 1;
 }
@@ -2670,6 +2688,7 @@ a:hover {
   padding: 0;
   background-color: transparent;
   outline: none;
+  color: var(--basic-white);
 }
 
 .fancy-form__input::placeholder {
