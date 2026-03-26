@@ -32,6 +32,7 @@
   --accent-blue-200: #0E457A;
   --accent-blue-300: #184772;
   --accent-light-blue: #9AEAF8;
+  --error: red;
 
   --transition-value: 0.3s ease-in-out;
 }
@@ -821,14 +822,39 @@ a:hover {
   box-shadow: -51px 496px 140px 0 rgba(50, 76, 103, 0.00), -33px 317px 128px 0 rgba(50, 76, 103, 0.01), -18px 178px 108px 0 rgba(50, 76, 103, 0.03), -8px 79px 80px 0 rgba(50, 76, 103, 0.04), -2px 20px 44px 0 rgba(50, 76, 103, 0.05);
 }
 
-fieldset[data-step="2"],
-fieldset[data-step="3"],
-fieldset[data-step="final"] {
+.quiz-form__row {
   display: none;
+}
+
+.quiz-form__row.active {
+  display: flex;
 }
 
 .quiz-form__row--final .quiz-form__box {
   margin-top: 25px;
+}
+
+.quiz-form__right.shake,
+.quiz__form label.shake {
+  animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  20%,
+  60% {
+    transform: translateX(-8px);
+  }
+
+  40%,
+  80% {
+    transform: translateX(8px);
+  }
 }
 
 .quiz-form__left {
@@ -949,6 +975,10 @@ fieldset[data-step="final"] {
   transition: all var(--transition-value);
 }
 
+.quiz-form__field:focus-within {
+  border-color: var(--basic-white);
+}
+
 .quiz-form__box>input {
   display: none;
 }
@@ -959,9 +989,9 @@ fieldset[data-step="final"] {
   font-family: var(--ff-main);
   border: none;
   padding: 0;
-
   background-color: transparent;
   outline: none;
+  color: var(--basic-white);
 }
 
 .quiz-form__input::placeholder {
@@ -980,7 +1010,7 @@ fieldset[data-step="final"] {
   margin-bottom: 5px;
 }
 
-.quiz-form__button-next {
+.quiz-form__button-back {
   width: 84px;
   flex-shrink: 0;
   height: 63px;
@@ -1098,6 +1128,10 @@ fieldset[data-step="final"] {
 
 .quiz-form__acceptence {
   margin-top: 20px;
+}
+
+.quiz-form__acceptence.error {
+  color: var(--error);
 }
 
 .quiz-form__info {
@@ -1281,13 +1315,18 @@ fieldset[data-step="final"] {
   background-color: transparent;
   border: none;
   outline: none;
+  color: var(--basic-white);
 }
 
 .calc-form__input::placeholder {
   font-family: var(--ff-main);
   font-size: 13px;
   font-weight: 500;
-  color: var(--basic-white);
+  color: rgba(255, 255, 255, 0.46);
+}
+
+.calc-form__label:focus-within {
+  border-color: white;
 }
 
 .calc-form__help {
@@ -2041,6 +2080,10 @@ fieldset[data-step="final"] {
   flex-grow: 1;
 }
 
+.deal__field:focus-within {
+  border-color: var(--basic-white);
+}
+
 .deal__input {
   flex-grow: 1;
   max-width: none;
@@ -2049,6 +2092,7 @@ fieldset[data-step="final"] {
   padding: 0;
   background-color: transparent;
   outline: none;
+  color: var(--basic-white);
 }
 
 .deal__input::placeholder {
@@ -2629,6 +2673,10 @@ fieldset[data-step="final"] {
   transition: all var(--transition-value);
 }
 
+.fancy-form__label:focus-within {
+  border-color: var(--basic-white);
+}
+
 .fancy-form__field .fancy-form__label {
   flex-grow: 1;
 }
@@ -2640,6 +2688,7 @@ fieldset[data-step="final"] {
   padding: 0;
   background-color: transparent;
   outline: none;
+  color: var(--basic-white);
 }
 
 .fancy-form__input::placeholder {
@@ -3030,7 +3079,7 @@ fieldset[data-step="final"] {
   padding-right: 190px;
 }
 
-.modal__form-btn-wrapper {
+.form__btn-wrapper {
   width: 100%;
   margin: auto;
   max-width: 330px;
@@ -3039,7 +3088,7 @@ fieldset[data-step="final"] {
   border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.modal__form-btn {
+.form__btn {
   width: 100%;
 }
 
@@ -3059,12 +3108,12 @@ fieldset[data-step="final"] {
   text-align: center;
 }
 
-.sale-price__slogan {
-  color: #FFF;
+.sale-price__text {
   font-family: var(--ff-headers);
   font-size: 15px;
   font-weight: 600;
   line-height: 165%;
+  color: var(--basic-white);
 }
 
 .sale-price__price-values {
@@ -4344,12 +4393,12 @@ fieldset[data-step="final"] {
     padding: 17px 20px;
   }
 
-  .modal__form-btn-wrapper {
+  .form__btn-wrapper {
     max-width: 100%;
     padding: 4px;
   }
 
-  .modal__form-btn {
+  .form__btn {
     width: 100%;
   }
 }
@@ -4887,7 +4936,7 @@ fieldset[data-step="final"] {
   }
 
   .popup__modal.modal {
-    padding-top: 92px;
+    padding-top: 85px;
     gap: 15px;
   }
 
