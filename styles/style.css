@@ -821,10 +821,12 @@ a:hover {
   box-shadow: -51px 496px 140px 0 rgba(50, 76, 103, 0.00), -33px 317px 128px 0 rgba(50, 76, 103, 0.01), -18px 178px 108px 0 rgba(50, 76, 103, 0.03), -8px 79px 80px 0 rgba(50, 76, 103, 0.04), -2px 20px 44px 0 rgba(50, 76, 103, 0.05);
 }
 
-fieldset[data-step="2"],
-fieldset[data-step="3"],
-fieldset[data-step="final"] {
+.quiz-form__row {
   display: none;
+}
+
+.quiz-form__row.active {
+  display: flex;
 }
 
 .quiz-form__row--final .quiz-form__box {
