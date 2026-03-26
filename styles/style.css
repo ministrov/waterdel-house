@@ -3030,7 +3030,7 @@ fieldset[data-step="final"] {
   padding-right: 190px;
 }
 
-.modal__form-btn-wrapper {
+.form__btn-wrapper {
   width: 100%;
   margin: auto;
   max-width: 330px;
@@ -3039,7 +3039,7 @@ fieldset[data-step="final"] {
   border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.modal__form-btn {
+.form__btn {
   width: 100%;
 }
 
@@ -3059,12 +3059,12 @@ fieldset[data-step="final"] {
   text-align: center;
 }
 
-.sale-price__slogan {
-  color: #FFF;
+.sale-price__text {
   font-family: var(--ff-headers);
   font-size: 15px;
   font-weight: 600;
   line-height: 165%;
+  color: var(--basic-white);
 }
 
 .sale-price__price-values {
@@ -4344,12 +4344,12 @@ fieldset[data-step="final"] {
     padding: 17px 20px;
   }
 
-  .modal__form-btn-wrapper {
+  .form__btn-wrapper {
     max-width: 100%;
     padding: 4px;
   }
 
-  .modal__form-btn {
+  .form__btn {
     width: 100%;
   }
 }
@@ -4887,7 +4887,7 @@ fieldset[data-step="final"] {
   }
 
   .popup__modal.modal {
-    padding-top: 92px;
+    padding-top: 85px;
     gap: 15px;
   }
 
