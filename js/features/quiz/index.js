@@ -1,7 +1,7 @@
 import { validateStep } from './validator.js';
+import { shakeElement } from '../../utils/shakeElement.js';
 // import { sendQuizForm } from '../../utils/ajax';
 // import { collectQuizAnswers } from '../../utils/collectyQuizAnswers';
-// import { shakeElement } from '../../utils/shakeElement';
 
 export function initQuiz($) {
   const $quiz = $('.quiz');
@@ -12,9 +12,6 @@ export function initQuiz($) {
   const $titles = $quiz.find('.quiz__titles-text');
   let currentStep = 0;
   const totalSteps = $rows.length;
-
-  // console.log($titles, currentStep, totalSteps);
-  console.log($rows);
 
   // Render active step feild
 
@@ -69,12 +66,16 @@ export function initQuiz($) {
     console.log('send');
     console.log(e.target);
 
-    const $finalRow = $rows.find('.quiz-form__row--final');
-    const $phoneInput = $finalRow.find('.quiz-form__field--tel');
+    const $finalRow = $form.find('.quiz-form__row--final');
+    const $phoneInput = $finalRow.find('input[name="phone"]');
     const $acceptInput = $finalRow.find('.acceptance__checkbox');
 
+    console.log($phoneInput);
+
     // Validate phone input
-    const phoneValue = $phoneInput.val().replace(/\D/g, '');
+    const phoneValue = $phoneInput.val()?.replace(/\D/g, '') || '';
+
+    console.log(phoneValue);
 
     if (phoneValue.length < 10) {
       shakeElement($phoneInput.closest('label'));
