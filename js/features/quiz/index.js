@@ -1,7 +1,7 @@
 import { validateStep } from './validator.js';
 import { shakeElement } from '../../utils/shakeElement.js';
-// import { sendQuizForm } from '../../utils/ajax';
-// import { collectQuizAnswers } from '../../utils/collectyQuizAnswers';
+import { collectQuizAnswers } from '../../utils/collectyQuizAnswers.js';
+import { sendQuizForm } from '../../utils/ajax.js';
 
 export function initQuiz($) {
   const $quiz = $('.quiz');
@@ -54,28 +54,15 @@ export function initQuiz($) {
     goToStep(currentStep - 1);
   });
 
-  // Clear error on accept checkbox change
-  $form.on('change', '.quiz-form__field--tel', function () {
-    if ($(this).is(':checked')) {
-      $(this).parents('.form__acceptence').removeClass('error');
-    }
-  });
-
   $form.on('click', '.quiz-form__button-send[type="submit"]', function (e) {
     e.preventDefault();
-    console.log('send');
-    console.log(e.target);
 
     const $finalRow = $form.find('.quiz-form__row--final');
     const $phoneInput = $finalRow.find('input[name="phone"]');
     const $acceptInput = $finalRow.find('.acceptance__checkbox');
 
-    console.log($phoneInput);
-
     // Validate phone input
     const phoneValue = $phoneInput.val()?.replace(/\D/g, '') || '';
-
-    console.log(phoneValue);
 
     if (phoneValue.length < 10) {
       shakeElement($phoneInput.closest('label'));
@@ -88,6 +75,20 @@ export function initQuiz($) {
       $acceptLabel.addClass('error');
       shakeElement($acceptLabel);
       return;
+    }
+
+    // Collect data from form
+
+    const formData = { phone: $phoneInput.val() };
+    const quizAnswers = collectQuizAnswers($, $rows);
+
+    sendQuizForm($, $form, formData, quizAnswers);
+  });
+
+  // Clear error on accept checkbox change
+  $form.on('change', '.quiz-form__field--tel', function () {
+    if ($(this).is(':checked')) {
+      $(this).parents('.form__acceptence').removeClass('error');
     }
   });
 
