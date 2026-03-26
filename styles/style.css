@@ -833,6 +833,29 @@ a:hover {
   margin-top: 25px;
 }
 
+.quiz-form__right.shake,
+.quiz__form label.shake {
+  animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  20%,
+  60% {
+    transform: translateX(-8px);
+  }
+
+  40%,
+  80% {
+    transform: translateX(8px);
+  }
+}
+
 .quiz-form__left {
   position: relative;
   z-index: 1;
@@ -982,7 +1005,7 @@ a:hover {
   margin-bottom: 5px;
 }
 
-.quiz-form__button-next {
+.quiz-form__button-back {
   width: 84px;
   flex-shrink: 0;
   height: 63px;
