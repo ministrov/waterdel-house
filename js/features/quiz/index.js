@@ -64,5 +64,31 @@ export function initQuiz($) {
     }
   });
 
+  $form.on('click', '.quiz-form__button-send[type="submit"]', function (e) {
+    e.preventDefault();
+    console.log('send');
+    console.log(e.target);
+
+    const $finalRow = $rows.find('.quiz-form__row--final');
+    const $phoneInput = $finalRow.find('.quiz-form__field--tel');
+    const $acceptInput = $finalRow.find('.acceptance__checkbox');
+
+    // Validate phone input
+    const phoneValue = $phoneInput.val().replace(/\D/g, '');
+
+    if (phoneValue.length < 10) {
+      shakeElement($phoneInput.closest('label'));
+      return;
+    }
+
+    // Validate acceptance
+    const $acceptLabel = $finalRow.find('.quiz-form__acceptence');
+    if (!$acceptInput.is(':checked')) {
+      $acceptLabel.addClass('error');
+      shakeElement($acceptLabel);
+      return;
+    }
+  });
+
   renderActiveStep();
 }
