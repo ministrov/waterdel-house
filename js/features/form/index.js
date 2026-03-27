@@ -27,7 +27,7 @@ export function initForm($) {
 
   $('[data-action="send"]').on('click', function (e) {
     e.preventDefault();
-    // console.log('send');
+
     const $form = $(this).closest('.form-action');
 
     // Clear previous errors

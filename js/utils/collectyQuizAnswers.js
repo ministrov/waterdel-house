@@ -12,7 +12,5 @@ export function collectQuizAnswers($, $rows) {
     }
   });
 
-  // console.log(answers);
-
   return answers;
 }

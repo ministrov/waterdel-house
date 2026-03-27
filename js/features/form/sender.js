@@ -1,5 +1,4 @@
 export function sendForm($, $form, formData) {
-  console.log($, $form, formData);
   return new Promise((resolve) => {
     $.ajax({
       url: wd_ajax_object.ajax_url,

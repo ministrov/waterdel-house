@@ -1,8 +1,6 @@
 import { addNotification } from './notification.js';
 
 export function validateForm($, $form) {
-  console.log($, $form);
-
   let isValid = true;
 
   // Clear all notifications first
