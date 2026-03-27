@@ -6,8 +6,6 @@ import { sendForm } from './sender.js';
 import { addNotification } from './notification.js';
 
 export function initForm($) {
-  console.log('initForm');
-
   maksPhone($);
 
   // Sanitize name input
