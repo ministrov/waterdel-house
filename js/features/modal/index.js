@@ -1,8 +1,6 @@
 import getScrollBarWidth from '../../utils/getScrollBarWidth.js';
 
 export function initModal($) {
-  // const scrollBarWidth = getScrollBarWidth($);
-
   window.openPopup = function (popupId) {
     $('#' + popupId).addClass('open');
 
