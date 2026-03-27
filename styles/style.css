@@ -1308,6 +1308,17 @@ a:hover {
   transition: all var(--transition-value);
 }
 
+.calc-form__label.error {
+  border-color: rgba(255, 42, 42, 0.60);
+  /* background: rgba(255, 173, 173, 1); */
+  box-shadow: 0 4px 37px 0 rgba(189, 55, 86, 0.43);
+  /* border-color: var(--error); */
+}
+
+.calc-form__label.error .calc-form__input::placeholder {
+  color: #FFB8B8;
+}
+
 .calc-form__input {
   flex-grow: 1;
   max-width: none;
