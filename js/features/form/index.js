@@ -12,4 +12,25 @@ export function initForm($) {
 
   // Sanitize name input
   sanitizeName($);
+
+  // Reset errors on input change
+  $('input[type="name"]').on('input', function () {
+    $(this).closest('label').removeClass('error');
+  });
+
+  $('input[type="tel"]').on('input', function () {
+    const digits = $(this).val()?.replace(/\D/g, '') || '';
+    if (digits.length === 11) {
+      $(this).closest('label').removeClass('error');
+    }
+  });
+
+  $('[data-action="send"]').on('click', function (e) {
+    e.preventDefault();
+    // console.log('send');
+    const $form = $(this).closest('.form-action');
+
+    // Clear previous errors
+    $form.find('label.error').removeClass('error');
+  });
 }
