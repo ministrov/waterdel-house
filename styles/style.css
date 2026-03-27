@@ -82,6 +82,21 @@ a:hover {
   color: var(--accent-green);
 }
 
+#form-notifications {
+  position: fixed;
+  z-index: 111111;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: auto;
+  height: 100%;
+  padding: 20px 10px;
+  gap: 10px;
+  pointer-events: none;
+}
+
 .container {
   box-sizing: content-box;
   max-width: var(--container-width);
