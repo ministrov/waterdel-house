@@ -1,8 +1,8 @@
 import { maksPhone } from './maskPhone.js';
 import { sanitizeName } from './sanitizeName.js';
-// import { validateForm } from './validator.js';
-// import { getFormData } from './collectore.js';
-// import { sendForm } from './sender.js';
+import { validateForm } from './validator.js';
+import { getFormData } from './collectore.js';
+import { sendForm } from './sender.js';
 // import { addNotifications } from './notification.js';
 
 export function initForm($) {
@@ -32,5 +32,11 @@ export function initForm($) {
 
     // Clear previous errors
     $form.find('label.error').removeClass('error');
+
+    if (validateForm($, $form)) {
+      const formData = getFormData($, $form);
+
+      sendForm($, $form, formData);
+    }
   });
 }
