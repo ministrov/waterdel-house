@@ -3,7 +3,7 @@ import { sanitizeName } from './sanitizeName.js';
 import { validateForm } from './validator.js';
 import { getFormData } from './collectore.js';
 import { sendForm } from './sender.js';
-// import { addNotifications } from './notification.js';
+import { addNotification } from './notification.js';
 
 export function initForm($) {
   console.log('initForm');
@@ -36,7 +36,19 @@ export function initForm($) {
     if (validateForm($, $form)) {
       const formData = getFormData($, $form);
 
-      sendForm($, $form, formData);
+      sendForm($, $form, formData)
+        .then(() => {
+          closePopup();
+          setTimeout(() => openPopup('modal-success'), 301);
+          if (window.yaCounter105401353) {
+            yaCounter105401353.reachGoal('zayavka');
+          }
+          clearForm($form);
+        })
+        .catch(() => {
+          closePopup();
+          addNotification('Ошибка отправки');
+        });
     }
   });
 }

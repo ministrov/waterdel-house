@@ -1,6 +1,6 @@
 let notificationCounter = 0;
 
-export function addNotifications(message, type = 'info') {
+export function addNotification(message, type = 'info') {
   console.log(message, type);
   const $container = $('#form-notifications');
 
