@@ -1319,6 +1319,14 @@ a:hover {
   color: #FFB8B8;
 }
 
+.calc-form__label svg path {
+  transition: all var(--transition-value);
+}
+
+.calc-form__labe.error svg path {
+  stroke: #FFB8B8;
+}
+
 .calc-form__input {
   flex-grow: 1;
   max-width: none;
